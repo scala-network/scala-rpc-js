@@ -75,7 +75,7 @@
                     <i class="fab fa-github-alt"></i>
                 </a>
            
-                <a href="https://www.npmjs.com/package/@scala/scala-rpc" title="View it on NPM" style="font-size: 19px">
+                <a href="https://www.npmjs.com/package/scala-rpc-js" title="View it on NPM" style="font-size: 19px">
                     <i class="fas fa-exclamation-triangle"></i>
                 </a>
            
@@ -122,7 +122,7 @@
   <section class="readme">
     <article>
       <h1>Scala RPC Daemon and RPC Wallet Javascript Library</h1>
-<p><a href="https://nodei.co/npm/@scala/scala-rpc/"><img src="https://nodei.co/npm/@scala/scala-rpc.png" alt="NPM"></a></p>
+<p><a href="https://nodei.co/npm/scala-rpc-js/"><img src="https://nodei.co/npm/scala-rpc-js.png" alt="NPM"></a></p>
 <p>Javascript library to interact with RPC Daemon and RPC Wallet.<br>
 All requests are queued. Most functions are async.</p>
 <p>Since version 0.2.0 the RPCDaemon and RPCWallet objects are created using a factory function instead of declaring the object with &quot;new&quot;.</p>
@@ -133,7 +133,7 @@ All requests are queued. Most functions are async.</p>
 <p>Once initialized simply use the query functions.</p>
 <h2>RPCDaemon without Digest Authentication</h2>
 <p>Please refer to the <a href="https://scala.github.io/scala-rpc-js/module-RPCDaemon.html">documentation</a> and look at the unit tests.</p>
-<pre class="prettyprint source lang-javascript"><code>const rpcDaemon = require('@scala/scala-rpc').RPCDaemon
+<pre class="prettyprint source lang-javascript"><code>const rpcDaemon = require('scala-rpc-js').RPCDaemon
 
 const daemonClient = rpcDaemon.createDaemonClient({
   url: 'http://127.0.0.1:39994'
@@ -143,7 +143,7 @@ daemonClient.sslRejectUnauthorized(false)
 </code></pre>
 <h2>RPCDaemon with Digest Authentication</h2>
 <p>Please refer to the <a href="https://scala.github.io/scala-rpc-js/module-RPCDaemon.html">documentation</a> and look at the unit tests.</p>
-<pre class="prettyprint source lang-javascript"><code>const rpcDaemon = require('@scala/scala-rpc').RPCDaemon
+<pre class="prettyprint source lang-javascript"><code>const rpcDaemon = require('scala-rpc-js').RPCDaemon
 
 const daemonClient = rpcDaemon.createDaemonClient({
   url: 'http://127.0.0.1:39994',
@@ -155,7 +155,7 @@ daemonClient.sslRejectUnauthorized(false)
 </code></pre>
 <h2>RPCWallet without Digest Authentication</h2>
 <p>Please refer to the <a href="https://scala.github.io/scala-rpc-js/module-RPCWallet.html">documentation</a> and look at the unit tests.</p>
-<pre class="prettyprint source lang-javascript"><code>const rpcWallet = require('@scala/scala-rpc').RPCWallet
+<pre class="prettyprint source lang-javascript"><code>const rpcWallet = require('scala-rpc-js').RPCWallet
 
 const walletClient = rpcWallet.createWalletClient({
   url: 'http://127.0.0.1:20000'
@@ -165,7 +165,7 @@ walletClient.sslRejectUnauthorized(false)
 </code></pre>
 <h2>RPCWallet with Digest Authentication</h2>
 <p>Please refer to the <a href="https://scala.github.io/scala-rpc-js/module-RPCWallet.html">documentation</a> and look at the unit tests.</p>
-<pre class="prettyprint source lang-javascript"><code>  const rpcWallet = require('@scala/scala-rpc').RPCWallet
+<pre class="prettyprint source lang-javascript"><code>  const rpcWallet = require('scala-rpc-js').RPCWallet
 
   const walletClient = rpcWallet.createWalletClient({
   url: 'http://127.0.0.1:20000',

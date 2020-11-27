@@ -1,5 +1,5 @@
 {
-  "name": "@scala/scala-rpc",
+  "name": "scala-rpc-js",
   "version": "0.2.1",
   "description": "Scala RPC Daemon and RPC Wallet Javascript Library",
   "main": "index.js",
