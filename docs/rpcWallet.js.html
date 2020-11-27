@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      ArQmA Javascript RPC Library - Documentation
+      Scala Javascript RPC Library - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -63,7 +63,7 @@
       <h1>
         <a href="index.html" title="modernTemplate.title">
             
-            ArQmA RPC JS
+            Scala RPC JS
         </a>
       </h1>
       <div class="center-header">
@@ -73,11 +73,11 @@
       </div>
       <div class="right-header">
            
-                <a href="https://github.com/arqma/arqma-rpc-js" title="View it on Github" style="">
+                <a href="https://github.com/scala-network/scala-rpc-js" title="View it on Github" style="">
                     <i class="fab fa-github-alt"></i>
                 </a>
            
-                <a href="https://www.npmjs.com/package/@arqma/arqma-rpc" title="View it on NPM" style="font-size: 19px">
+                <a href="https://www.npmjs.com/package/@scala/scala-rpc" title="View it on NPM" style="font-size: 19px">
                     <i class="fas fa-exclamation-triangle"></i>
                 </a>
            
@@ -383,7 +383,7 @@ rpcWallet.createWalletClient = function (config) {
       return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseWalletResponse, 'create_address', opts)
     },
     /**
-    * Create a new wallet. You need to have set the argument "–wallet-dir" when launching arqma-wallet-rpc to make this work.
+    * Create a new wallet. You need to have set the argument "–wallet-dir" when launching scala-wallet-rpc to make this work.
     * @async
     * @param {Object} opts
     * @param {string} opts.filename - Wallet file name.
@@ -1164,7 +1164,7 @@ rpcWallet.createWalletClient = function (config) {
     * @returns {Promise&lt;object>} Promise object.
     * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
     * {
-    *  uri: 'arqma:as3ne6ewX5GBfSkQZsWi5YWjTG9xRSA5fMYBM7sfawiqWr2n1qd5Y4JJEWKXE1dKRCNuVWQLeknUmWascmFBNwKi1zyBaB9n2?tx_payment_id=8ca523f5e9506fed&amp;tx_amount=1.000000000&amp;recipient_name=stagenet%20B&amp;tx_description=test'
+    *  uri: 'scala:as3ne6ewX5GBfSkQZsWi5YWjTG9xRSA5fMYBM7sfawiqWr2n1qd5Y4JJEWKXE1dKRCNuVWQLeknUmWascmFBNwKi1zyBaB9n2?tx_payment_id=8ca523f5e9506fed&amp;tx_amount=1.000000000&amp;recipient_name=stagenet%20B&amp;tx_description=test'
     * }
     */
     makeUri: async function (opts) {
@@ -1180,7 +1180,7 @@ rpcWallet.createWalletClient = function (config) {
       return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseWalletResponse, 'make_uri', opts)
     },
     /**
-    * Open a wallet. You need to have set the argument "–wallet-dir" when launching arqma-wallet-rpc to make this work.
+    * Open a wallet. You need to have set the argument "–wallet-dir" when launching scala-wallet-rpc to make this work.
     * @async
     * @param {Object} opts
     * @param {string} opts.filename - Wallet name stored in –wallet-dir.
@@ -1522,7 +1522,7 @@ rpcWallet.createWalletClient = function (config) {
       return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseWalletResponse, 'split_integrated_address', opts)
     },
     /**
-    * Start mining in the ArQmA daemon.
+    * Start mining in the Scala daemon.
     * @async
     * @param {Object} opts
     * @param {number} opts.threads_count - Number of threads created for mining.
@@ -1661,7 +1661,7 @@ rpcWallet.createWalletClient = function (config) {
     * @async
     * @param {Object} opts
     * @param {boolean} [opts.get_tx_keys] - Return the transaction keys after sending.
-    * @param {boolean} [opts.do_not_relay] - If true, the newly created transaction will not be relayed to the ArQmA network. (Defaults to false).
+    * @param {boolean} [opts.do_not_relay] - If true, the newly created transaction will not be relayed to the Scala network. (Defaults to false).
     * @param {boolean} [opts.get_tx_hex] - Return the transactions as hex string after sending. (Defaults to false).
     * @param {boolean} [opts.get_tx_metadata] - Return list of transaction metadata needed to relay the transfer later. (Defaults to false).
     * @returns {Promise&lt;object>} Promise object.
@@ -1767,7 +1767,7 @@ rpcWallet.createWalletClient = function (config) {
     * @param {number} opts.unlock_time - Number of blocks before the ARQ can be spent (0 to not add a lock).
     * @param {string} [opts.payment_id] - Random 32-byte/64-character hex string to identify a transaction.
     * @param {boolean} [opts.get_tx_key] - Return the transaction key after sending.
-    * @param {boolean} [opts.do_not_relay] -  If true, the newly created transaction will not be relayed to the ArQmA network. (Defaults to false).
+    * @param {boolean} [opts.do_not_relay] -  If true, the newly created transaction will not be relayed to the Scala network. (Defaults to false).
     * @param {boolean} [opts.get_tx_hex] - Return the transaction as hex string after sending (Defaults to false).
     * @param {boolean} [opts.get_tx_metadata] - Return the metadata needed to relay the transaction. (Defaults to false).
     * @returns {Promise&lt;object>} Promise object.
@@ -1819,7 +1819,7 @@ rpcWallet.createWalletClient = function (config) {
     * @param {string} [opts.payment_id] - Random 32-byte/64-character hex string to identify a transaction.
     * @param {boolean} [opts.get_tx_keys] - Return the transaction keys after sending.
     * @param {number} opts.priority - Set a priority for the transaction. Accepted Values are: 0-3 for: default, unimportant, normal, elevated, priority.
-    * @param {boolean} [opts.do_not_relay] -  If true, the newly created transaction will not be relayed to the ArQmA network. (Defaults to false).
+    * @param {boolean} [opts.do_not_relay] -  If true, the newly created transaction will not be relayed to the Scala network. (Defaults to false).
     * @param {boolean} [opts.get_tx_hex] - Return the transactions as hex string after sending.
     * @param {boolean} [opts.new_algorithm] - True to use the new transaction construction algorithm, defaults to false.
     * @param {boolean} [opts.get_tx_metadata] - Return list of transaction metadata needed to relay the transfer later.
@@ -1871,7 +1871,7 @@ rpcWallet.createWalletClient = function (config) {
       return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseWalletResponse, 'untag_accounts', opts)
     },
     /**
-    * Parse an address to validate if it's a valid ArQmA address.
+    * Parse an address to validate if it's a valid Scala address.
     * @async
     * @param {Object} opts
     * @param {string} opts.address - Wallet address to check.

@@ -1,7 +1,7 @@
 {
-  "name": "@arqma/arqma-rpc",
+  "name": "@scala/scala-rpc",
   "version": "0.2.1",
-  "description": "ArQmA RPC Daemon and RPC Wallet Javascript Library",
+  "description": "Scala RPC Daemon and RPC Wallet Javascript Library",
   "main": "index.js",
   "directories": {
     "doc": "docs",
@@ -41,21 +41,21 @@
     "test-wallet-validate-address": "mocha -t 60000 ./test/wallet/walletValidateAddress.js",
     "generate-docs": "jsdoc ./lib/rpcWallet.js ./lib/rpcDaemon.js --readme ./README.md -c ./jsdoc.json -d docs --verbose"
   },
-  "author": "SmajeNz0",
+  "author": "Scala Network",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arqma/arqma-rpc-js.git"
+    "url": "git+https://github.com/scala-network/scala-rpc-js.git"
   },
   "keywords": [
-    "ArQmA",
+    "Scala",
     "RPC",
     "Daemon",
     "Wallet",
     "client"
   ],
   "bugs": {
-    "url": "https://github.com/arqma/arqma-rpc-js/issues"
+    "url": "https://github.com/scala-network/scala-rpc-js/issues"
   },
-  "homepage": "https://github.com/arqma/arqma-rpc-js#readme"
+  "homepage": "https://github.com/scala-network/scala-rpc-js#readme"
 }

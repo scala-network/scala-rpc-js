@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      ArQmA Javascript RPC Library - Documentation
+      Scala Javascript RPC Library - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -61,7 +61,7 @@
       <h1>
         <a href="index.html" title="modernTemplate.title">
             
-            ArQmA RPC JS
+            Scala RPC JS
         </a>
       </h1>
       <div class="center-header">
@@ -71,11 +71,11 @@
       </div>
       <div class="right-header">
            
-                <a href="https://github.com/arqma/arqma-rpc-js" title="View it on Github" style="">
+                <a href="https://github.com/scala-network/scala-rpc-js" title="View it on Github" style="">
                     <i class="fab fa-github-alt"></i>
                 </a>
            
-                <a href="https://www.npmjs.com/package/@arqma/arqma-rpc" title="View it on NPM" style="font-size: 19px">
+                <a href="https://www.npmjs.com/package/@scala/scala-rpc" title="View it on NPM" style="font-size: 19px">
                     <i class="fas fa-exclamation-triangle"></i>
                 </a>
            
@@ -121,8 +121,8 @@
 
   <section class="readme">
     <article>
-      <h1>ArQmA RPC Daemon and RPC Wallet Javascript Library</h1>
-<p><a href="https://nodei.co/npm/@arqma/arqma-rpc/"><img src="https://nodei.co/npm/@arqma/arqma-rpc.png" alt="NPM"></a></p>
+      <h1>Scala RPC Daemon and RPC Wallet Javascript Library</h1>
+<p><a href="https://nodei.co/npm/@scala/scala-rpc/"><img src="https://nodei.co/npm/@scala/scala-rpc.png" alt="NPM"></a></p>
 <p>Javascript library to interact with RPC Daemon and RPC Wallet.<br>
 All requests are queued. Most functions are async.</p>
 <p>Since version 0.2.0 the RPCDaemon and RPCWallet objects are created using a factory function instead of declaring the object with &quot;new&quot;.</p>
@@ -132,8 +132,8 @@ All requests are queued. Most functions are async.</p>
 <p>Digest authentication is activated as soon as a username and a password is supplied during object creation.</p>
 <p>Once initialized simply use the query functions.</p>
 <h2>RPCDaemon without Digest Authentication</h2>
-<p>Please refer to the <a href="https://arqma.github.io/arqma-rpc-js/module-RPCDaemon.html">documentation</a> and look at the unit tests.</p>
-<pre class="prettyprint source lang-javascript"><code>const rpcDaemon = require('@arqma/arqma-rpc').RPCDaemon
+<p>Please refer to the <a href="https://scala.github.io/scala-rpc-js/module-RPCDaemon.html">documentation</a> and look at the unit tests.</p>
+<pre class="prettyprint source lang-javascript"><code>const rpcDaemon = require('@scala/scala-rpc').RPCDaemon
 
 const daemonClient = rpcDaemon.createDaemonClient({
   url: 'http://127.0.0.1:39994'
@@ -142,8 +142,8 @@ const daemonClient = rpcDaemon.createDaemonClient({
 daemonClient.sslRejectUnauthorized(false)
 </code></pre>
 <h2>RPCDaemon with Digest Authentication</h2>
-<p>Please refer to the <a href="https://arqma.github.io/arqma-rpc-js/module-RPCDaemon.html">documentation</a> and look at the unit tests.</p>
-<pre class="prettyprint source lang-javascript"><code>const rpcDaemon = require('@arqma/arqma-rpc').RPCDaemon
+<p>Please refer to the <a href="https://scala.github.io/scala-rpc-js/module-RPCDaemon.html">documentation</a> and look at the unit tests.</p>
+<pre class="prettyprint source lang-javascript"><code>const rpcDaemon = require('@scala/scala-rpc').RPCDaemon
 
 const daemonClient = rpcDaemon.createDaemonClient({
   url: 'http://127.0.0.1:39994',
@@ -154,8 +154,8 @@ const daemonClient = rpcDaemon.createDaemonClient({
 daemonClient.sslRejectUnauthorized(false)
 </code></pre>
 <h2>RPCWallet without Digest Authentication</h2>
-<p>Please refer to the <a href="https://arqma.github.io/arqma-rpc-js/module-RPCWallet.html">documentation</a> and look at the unit tests.</p>
-<pre class="prettyprint source lang-javascript"><code>const rpcWallet = require('@arqma/arqma-rpc').RPCWallet
+<p>Please refer to the <a href="https://scala.github.io/scala-rpc-js/module-RPCWallet.html">documentation</a> and look at the unit tests.</p>
+<pre class="prettyprint source lang-javascript"><code>const rpcWallet = require('@scala/scala-rpc').RPCWallet
 
 const walletClient = rpcWallet.createWalletClient({
   url: 'http://127.0.0.1:20000'
@@ -164,8 +164,8 @@ const walletClient = rpcWallet.createWalletClient({
 walletClient.sslRejectUnauthorized(false)
 </code></pre>
 <h2>RPCWallet with Digest Authentication</h2>
-<p>Please refer to the <a href="https://arqma.github.io/arqma-rpc-js/module-RPCWallet.html">documentation</a> and look at the unit tests.</p>
-<pre class="prettyprint source lang-javascript"><code>  const rpcWallet = require('@arqma/arqma-rpc').RPCWallet
+<p>Please refer to the <a href="https://scala.github.io/scala-rpc-js/module-RPCWallet.html">documentation</a> and look at the unit tests.</p>
+<pre class="prettyprint source lang-javascript"><code>  const rpcWallet = require('@scala/scala-rpc').RPCWallet
 
   const walletClient = rpcWallet.createWalletClient({
   url: 'http://127.0.0.1:20000',

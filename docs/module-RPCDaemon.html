@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      ArQmA Javascript RPC Library - Documentation
+      Scala Javascript RPC Library - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -61,7 +61,7 @@
       <h1>
         <a href="index.html" title="modernTemplate.title">
             
-            ArQmA RPC JS
+            Scala RPC JS
         </a>
       </h1>
       <div class="center-header">
@@ -71,11 +71,11 @@
       </div>
       <div class="right-header">
            
-                <a href="https://github.com/arqma/arqma-rpc-js" title="View it on Github" style="">
+                <a href="https://github.com/scala-network/scala-rpc-js" title="View it on Github" style="">
                     <i class="fab fa-github-alt"></i>
                 </a>
            
-                <a href="https://www.npmjs.com/package/@arqma/arqma-rpc" title="View it on NPM" style="font-size: 19px">
+                <a href="https://www.npmjs.com/package/@scala/scala-rpc" title="View it on NPM" style="font-size: 19px">
                     <i class="fas fa-exclamation-triangle"></i>
                 </a>
            
@@ -756,7 +756,14 @@
   </p>
 
 
-  <pre class="prettyprint"><code>{ bans: [  { host: '192.168.1.50', ip: 838969536, seconds: 30 },  { host: '192.168.1.51', ip: 855746752, seconds: 30 } ], status: 'OK'}</code></pre>
+  <pre class="prettyprint"><code>{
+ bans:
+ [
+  { host: '192.168.1.50', ip: 838969536, seconds: 30 },
+  { host: '192.168.1.51', ip: 855746752, seconds: 30 }
+ ],
+ status: 'OK'
+}</code></pre>
 
 
   </div>
@@ -963,7 +970,47 @@
   </p>
 
 
-  <pre class="prettyprint"><code>{ blob: '0a0ab294a0e305be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e        743b62008002a6fc0601ff94fc0601a5a7a3bf4702f0f7be480164ced3d5d28c49dd9baeb5ab2bd3        29910838afd3e26cd85ad49b3e6101311398a1783551ba88c64c00135d0439d982fc4d70f48e1dff        cca8146454e84303210091abcad5e3b8bc208e5361ffeebbb68a35e102a5225f4865e3503cf7e76a        ff92021b000000000000000000000000005602009e000000000000000000000000', block_header: {  block_size: 147,  cumulative_difficulty: 16146009479722,  depth: 31535,  difficulty: 109000131,  hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',  height: 114196,  major_version: 10,  minor_version: 10,  nonce: 2147508795,  num_txes: 0,  orphan_status: false,  pow_hash: '',  prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',  reward: 19191616421,  timestamp: 1550322226 }, json: '{\n  "major_version": 10, \n  "minor_version": 10, \n  "timestamp": 15503222 26, \n  "prev_id": "be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf2 4e74", \n  "nonce": 2147508795, \n  "miner_tx": {\n    "version": 2, \n    "unlo ck_time": 114214, \n    "vin": [ {\n        "gen": {\n          "height": 114196 \n        }\n      }\n    ], \n    "vout": [ {\n        "amount": 19191616421, \ n        "target": {\n          "key": "f0f7be480164ced3d5d28c49dd9baeb5ab2bd329 910838afd3e26cd85ad49b3e"\n        }\n      }\n    ], \n    "extra": [ 1, 49, 19 , 152, 161, 120, 53, 81, 186, 136, 198, 76, 0, 19, 93, 4, 57, 217, 130, 252, 77, 112, 244, 142, 29, 255, 204, 168, 20, 100, 84, 232, 67, 3, 33, 0, 145, 171, 202 , 213, 227, 184, 188, 32, 142, 83, 97, 255, 238, 187, 182, 138, 53, 225, 2, 165, 34, 95, 72, 101, 227, 80, 60, 247, 231, 106, 255, 146, 2, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 86, 2, 0, 158, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\n    ], \n "rct_signatures": {\n      "type": 0\n    }\n  }, \n  "tx_hashes": [ ]\n}', miner_tx_hash: '691e09ce198a2953c391a292ed79d7a239ec929740503400a0ab3e3ee8cfad84', status: 'OK', untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{
+ blob: '0a0ab294a0e305be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e
+        743b62008002a6fc0601ff94fc0601a5a7a3bf4702f0f7be480164ced3d5d28c49dd9baeb5ab2bd3
+        29910838afd3e26cd85ad49b3e6101311398a1783551ba88c64c00135d0439d982fc4d70f48e1dff
+        cca8146454e84303210091abcad5e3b8bc208e5361ffeebbb68a35e102a5225f4865e3503cf7e76a
+        ff92021b000000000000000000000000005602009e000000000000000000000000',
+ block_header:
+ {
+  block_size: 147,
+  cumulative_difficulty: 16146009479722,
+  depth: 31535,
+  difficulty: 109000131,
+  hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',
+  height: 114196,
+  major_version: 10,
+  minor_version: 10,
+  nonce: 2147508795,
+  num_txes: 0,
+  orphan_status: false,
+  pow_hash: '',
+  prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',
+  reward: 19191616421,
+  timestamp: 1550322226
+ },
+ json: '{\n  "major_version": 10, \n  "minor_version": 10, \n  "timestamp": 15503222
+ 26, \n  "prev_id": "be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf2
+ 4e74", \n  "nonce": 2147508795, \n  "miner_tx": {\n    "version": 2, \n    "unlo
+ ck_time": 114214, \n    "vin": [ {\n        "gen": {\n          "height": 114196
+ \n        }\n      }\n    ], \n    "vout": [ {\n        "amount": 19191616421, \
+ n        "target": {\n          "key": "f0f7be480164ced3d5d28c49dd9baeb5ab2bd329
+ 910838afd3e26cd85ad49b3e"\n        }\n      }\n    ], \n    "extra": [ 1, 49, 19
+ , 152, 161, 120, 53, 81, 186, 136, 198, 76, 0, 19, 93, 4, 57, 217, 130, 252, 77,
+ 112, 244, 142, 29, 255, 204, 168, 20, 100, 84, 232, 67, 3, 33, 0, 145, 171, 202
+ , 213, 227, 184, 188, 32, 142, 83, 97, 255, 238, 187, 182, 138, 53, 225, 2, 165,
+ 34, 95, 72, 101, 227, 80, 60, 247, 231, 106, 255, 146, 2, 27, 0, 0, 0, 0, 0, 0,
+ 0, 0, 0, 0, 0, 0, 0, 86, 2, 0, 158, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\n    ], \n
+ "rct_signatures": {\n      "type": 0\n    }\n  }, \n  "tx_hashes": [ ]\n}',
+ miner_tx_hash: '691e09ce198a2953c391a292ed79d7a239ec929740503400a0ab3e3ee8cfad84',
+ status: 'OK',
+ untrusted: false
+}</code></pre>
 
 
   </div>
@@ -1072,7 +1119,10 @@
   </p>
 
 
-  <pre class="prettyprint"><code>{ count: 144188, status: 'OK'}</code></pre>
+  <pre class="prettyprint"><code>{
+ count: 144188,
+ status: 'OK'
+}</code></pre>
 
 
   </div>
@@ -1406,7 +1456,28 @@
   </p>
 
 
-  <pre class="prettyprint"><code>{ block_header: {  block_size: 147,  cumulative_difficulty: 16146009479722,  depth: 30823,  difficulty: 109000131,  hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',  height: 114196,  major_version: 10,  minor_version: 10,  nonce: 2147508795,  num_txes: 0,  orphan_status: false,  pow_hash: '',  prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',  reward: 19191616421,  timestamp: 1550322226 }, status: 'OK', untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{
+ block_header:
+ {
+  block_size: 147,
+  cumulative_difficulty: 16146009479722,
+  depth: 30823,
+  difficulty: 109000131,
+  hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',
+  height: 114196,
+  major_version: 10,
+  minor_version: 10,
+  nonce: 2147508795,
+  num_txes: 0,
+  orphan_status: false,
+  pow_hash: '',
+  prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',
+  reward: 19191616421,
+  timestamp: 1550322226
+ },
+ status: 'OK',
+ untrusted: false
+}</code></pre>
 
 
   </div>
@@ -1573,7 +1644,28 @@
   </p>
 
 
-  <pre class="prettyprint"><code>{ block_header: {  block_size: 147,  cumulative_difficulty: 16146009479722,  depth: 30823,  difficulty: 109000131,  hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',  height: 114196,  major_version: 10,  minor_version: 10,  nonce: 2147508795,  num_txes: 0,  orphan_status: false,  pow_hash: '',  prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',  reward: 19191616421,  timestamp: 1550322226 }, status: 'OK', untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{
+ block_header:
+ {
+  block_size: 147,
+  cumulative_difficulty: 16146009479722,
+  depth: 30823,
+  difficulty: 109000131,
+  hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',
+  height: 114196,
+  major_version: 10,
+  minor_version: 10,
+  nonce: 2147508795,
+  num_txes: 0,
+  orphan_status: false,
+  pow_hash: '',
+  prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',
+  reward: 19191616421,
+  timestamp: 1550322226
+ },
+ status: 'OK',
+ untrusted: false
+}</code></pre>
 
 
   </div>
@@ -1761,7 +1853,47 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ headers: [  {   block_size: 147,   cumulative_difficulty: 16146009479722,   depth: 30831,   difficulty: 109000131,   hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',   height: 114196,   major_version: 10,   minor_version: 10,   nonce: 2147508795,   num_txes: 0,   orphan_status: false,   pow_hash: '',   prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',   reward: 19191616421,   timestamp: 1550322226  },  {   block_size: 147,   cumulative_difficulty: 16146120479856,   depth: 30830,   difficulty: 111000134,   hash: 'c27c128325bb3f47d76816789995d376268ee25f3cdcfb714580e34fe5cc8e08',   height: 114197,   major_version: 10,   minor_version: 10,   nonce: 541065496,   num_txes: 0,   orphan_status: false,   pow_hash: '',   prev_hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',   reward: 19191607270,   timestamp: 1550322551  } ], status: 'OK', untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{
+ headers:
+ [
+  {
+   block_size: 147,
+   cumulative_difficulty: 16146009479722,
+   depth: 30831,
+   difficulty: 109000131,
+   hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',
+   height: 114196,
+   major_version: 10,
+   minor_version: 10,
+   nonce: 2147508795,
+   num_txes: 0,
+   orphan_status: false,
+   pow_hash: '',
+   prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',
+   reward: 19191616421,
+   timestamp: 1550322226
+  },
+  {
+   block_size: 147,
+   cumulative_difficulty: 16146120479856,
+   depth: 30830,
+   difficulty: 111000134,
+   hash: 'c27c128325bb3f47d76816789995d376268ee25f3cdcfb714580e34fe5cc8e08',
+   height: 114197,
+   major_version: 10,
+   minor_version: 10,
+   nonce: 541065496,
+   num_txes: 0,
+   orphan_status: false,
+   pow_hash: '',
+   prev_hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',
+   reward: 19191607270,
+   timestamp: 1550322551
+  }
+ ],
+ status: 'OK',
+ untrusted: false
+}</code></pre>
 
 
   </div>
@@ -1950,7 +2082,14 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ blocks: [  { block_header: [Object], txs: [Array] },  { block_header: [Object], txs: [Array] } ], status: 'OK', untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{ blocks:
+ [
+  { block_header: [Object], txs: [Array] },
+  { block_header: [Object], txs: [Array] }
+ ],
+ status: 'OK',
+ untrusted: false
+}</code></pre>
 
 
   </div>
@@ -2137,7 +2276,22 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ blockhashing_blob: '0b0bdc83ffe405686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a                    9000000000cc172232b1465580877b898f8f6021ad264705fb44d4ce4116576c951865dc6e02', blocktemplate_blob: '0b0bdc83ffe405686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a                     900000000002b3e70801ffa1e70801919ef5bc46027fecb474827691e150863765eeb11c7fda                     e88e9cf413468b3f46a6fd1416174f2101958d80e5dd64b962d539a18e2fab89cd6abf1ddd2d                     f4b6c2b890c1fad31acd310001eae8de4b74bf117c059ba9b68c9e81a2465997319dd5805a90                     dfae8290b33ab9', difficulty: 58700182, expected_reward: 18918231825, height: 144289, prev_hash: '686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a90', reserved_offset: 127, status: 'OK', untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{
+ blockhashing_blob: '0b0bdc83ffe405686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a
+                    9000000000cc172232b1465580877b898f8f6021ad264705fb44d4ce4116576c951865dc6e02',
+ blocktemplate_blob: '0b0bdc83ffe405686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a
+                     900000000002b3e70801ffa1e70801919ef5bc46027fecb474827691e150863765eeb11c7fda
+                     e88e9cf413468b3f46a6fd1416174f2101958d80e5dd64b962d539a18e2fab89cd6abf1ddd2d
+                     f4b6c2b890c1fad31acd310001eae8de4b74bf117c059ba9b68c9e81a2465997319dd5805a90
+                     dfae8290b33ab9',
+ difficulty: 58700182,
+ expected_reward: 18918231825,
+ height: 144289,
+ prev_hash: '686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a90',
+ reserved_offset: 127,
+ status: 'OK',
+ untrusted: false
+}</code></pre>
 
 
   </div>
@@ -2324,7 +2478,11 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ emission_amount: 7502006245466748, fee_amount: 0, status: 'OK'}</code></pre>
+  <pre class="prettyprint"><code>{
+ emission_amount: 7502006245466748,
+ fee_amount: 0,
+ status: 'OK'
+}</code></pre>
 
 
   </div>
@@ -2433,7 +2591,35 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ connections: [  {   address: '192.154.226.212:19993',   avg_download: 1,   avg_upload: 0,   connection_id: 'cb8f0270c5b740fa9eb7aa1aedddb5cb',   current_download: 2,   current_upload: 0,   height: 145745,   host: '192.154.226.212',   incoming: false,   ip: '192.154.226.212',   live_time: 20,   local_ip: false,   localhost: false,   peer_id: 'c7f323892fb18784',   port: '19993',   pruning_seed: 0,   recv_count: 22852,   recv_idle_time: 13,   send_count: 568,   send_idle_time: 13,   state: 'normal',   support_flags: 1  }, ... ]}</code></pre>
+  <pre class="prettyprint"><code>{
+ connections:
+ [
+  {
+   address: '192.154.226.212:19993',
+   avg_download: 1,
+   avg_upload: 0,
+   connection_id: 'cb8f0270c5b740fa9eb7aa1aedddb5cb',
+   current_download: 2,
+   current_upload: 0,
+   height: 145745,
+   host: '192.154.226.212',
+   incoming: false,
+   ip: '192.154.226.212',
+   live_time: 20,
+   local_ip: false,
+   localhost: false,
+   peer_id: 'c7f323892fb18784',
+   port: '19993',
+   pruning_seed: 0,
+   recv_count: 22852,
+   recv_idle_time: 13,
+   send_count: 568,
+   send_idle_time: 13,
+   state: 'normal',
+   support_flags: 1
+  }, ...
+ ]
+}</code></pre>
 
 
   </div>
@@ -2729,7 +2915,18 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ earliest_height: 131650, enabled: true, state: 2, status: 'OK', threshold: 0, untrusted: false, version: 11, votes: 10080, voting: 11, window: 10080}</code></pre>
+  <pre class="prettyprint"><code>{
+ earliest_height: 131650,
+ enabled: true,
+ state: 2,
+ status: 'OK',
+ threshold: 0,
+ untrusted: false,
+ version: 11,
+ votes: 10080,
+ voting: 11,
+ window: 10080
+}</code></pre>
 
 
   </div>
@@ -2838,7 +3035,37 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ alt_blocks_count: 0, block_size_limit: 600000, block_size_median: 147, bootstrap_daemon_address: '', cumulative_difficulty: 20431347989483, database_size: 0, difficulty: 75600102, free_space: 243485646848, grey_peerlist_size: 62, height: 145746, height_without_bootstrap: 145746, incoming_connections_count: 7, mainnet: true, nettype: 'mainnet', offline: false, outgoing_connections_count: 8, rpc_connections_count: 2, stagenet: false, start_time: 1554144733, status: 'OK', target: 120, target_height: 145732, testnet: false, top_block_hash: '9df96b39bb2ca8953cbf8f2fffc8f9896a74f430cbe29dc0ad356986ef93024c', tx_count: 179362, tx_pool_size: 10, untrusted: false, was_bootstrap_ever_used: false, white_peerlist_size: 38}</code></pre>
+  <pre class="prettyprint"><code>{
+ alt_blocks_count: 0,
+ block_size_limit: 600000,
+ block_size_median: 147,
+ bootstrap_daemon_address: '',
+ cumulative_difficulty: 20431347989483,
+ database_size: 0,
+ difficulty: 75600102,
+ free_space: 243485646848,
+ grey_peerlist_size: 62,
+ height: 145746,
+ height_without_bootstrap: 145746,
+ incoming_connections_count: 7,
+ mainnet: true,
+ nettype: 'mainnet',
+ offline: false,
+ outgoing_connections_count: 8,
+ rpc_connections_count: 2,
+ stagenet: false,
+ start_time: 1554144733,
+ status: 'OK',
+ target: 120,
+ target_height: 145732,
+ testnet: false,
+ top_block_hash: '9df96b39bb2ca8953cbf8f2fffc8f9896a74f430cbe29dc0ad356986ef93024c',
+ tx_count: 179362,
+ tx_pool_size: 10,
+ untrusted: false,
+ was_bootstrap_ever_used: false,
+ white_peerlist_size: 38
+}</code></pre>
 
 
   </div>
@@ -2947,7 +3174,30 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ block_header: {   block_size: 147,   cumulative_difficulty: 20379479802883,   depth: 0,   difficulty: 61400097,   hash: 'c99c2f9a53e4bab5d08f9820ee555d62059e0e9bf799fbe07a6137aac607f4e8',   height: 145009,   major_version: 11,   minor_version: 11,   nonce: 3441194797,   num_txes: 0,   orphan_status: false,   pow_hash: '',   prev_hash: '53d6437ac32fc49e0ee8b24f63046c6e1e6e0491f6d1b6797b025b66ad1b4a40',   reward: 18911700042,   timestamp: 1554058920 },   status: 'OK',   untrusted: false } count: 144188, status: 'OK'}</code></pre>
+  <pre class="prettyprint"><code>{
+ block_header:
+ {
+   block_size: 147,
+   cumulative_difficulty: 20379479802883,
+   depth: 0,
+   difficulty: 61400097,
+   hash: 'c99c2f9a53e4bab5d08f9820ee555d62059e0e9bf799fbe07a6137aac607f4e8',
+   height: 145009,
+   major_version: 11,
+   minor_version: 11,
+   nonce: 3441194797,
+   num_txes: 0,
+   orphan_status: false,
+   pow_hash: '',
+   prev_hash: '53d6437ac32fc49e0ee8b24f63046c6e1e6e0491f6d1b6797b025b66ad1b4a40',
+   reward: 18911700042,
+   timestamp: 1554058920 },
+   status: 'OK',
+   untrusted: false
+ }
+ count: 144188,
+ status: 'OK'
+}</code></pre>
 
 
   </div>
@@ -3519,7 +3769,19 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ histogram: [  {   amount: 10000000,   recent_instances: 0,   total_instances: 1481,   unlocked_instances: 0  } ], status: 'OK', untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{
+ histogram:
+ [
+  {
+   amount: 10000000,
+   recent_instances: 0,
+   total_instances: 1481,
+   unlocked_instances: 0
+  }
+ ],
+ status: 'OK',
+ untrusted: false
+}</code></pre>
 
 
   </div>
@@ -3937,7 +4199,12 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ "limit_down": 8192, "limit_up": 128, "status": "OK", "untrusted": false}</code></pre>
+  <pre class="prettyprint"><code>{
+ "limit_down": 8192,
+ "limit_up": 128,
+ "status": "OK",
+ "untrusted": false
+}</code></pre>
 
 
   </div>
@@ -4046,7 +4313,27 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ gray_list: [  { host: '135790251',    id: 17703185689409910000,    ip: 135790251,    last_seen: 1551473999,    port: 19993,    pruning_seed: 0 }, ... ] status: 'OK', white_list: [  { host: '35263064',    id: 3764929947382960000,    ip: 35263064,    last_seen: 1554553579,    port: 19993,    pruning_seed: 0 }, ... ]}</code></pre>
+  <pre class="prettyprint"><code>{
+ gray_list:
+ [
+  { host: '135790251',
+    id: 17703185689409910000,
+    ip: 135790251,
+    last_seen: 1551473999,
+    port: 19993,
+    pruning_seed: 0 }, ...
+ ]
+ status: 'OK',
+ white_list:
+ [
+  { host: '35263064',
+    id: 3764929947382960000,
+    ip: 35263064,
+    last_seen: 1554553579,
+    port: 19993,
+    pruning_seed: 0 }, ...
+ ]
+}</code></pre>
 
 
   </div>
@@ -4155,7 +4442,38 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ spent_key_images: [  { id_hash: '12f6051aea57b598e7aefe436545ab55f449b11d392fffd76e33eef53ad9b962',    txs_hashes: [Array] },   ...],status: 'OK',transactions:[ { blob_size: 4384,   do_not_relay: false,   double_spend_seen: false,   fee: 37750,   id_hash:   '3fa2745621696d4e87d997e32409469cc3d734fda186f37878b8db2972a99a41',   kept_by_block: false,   last_failed_height: 0,   last_failed_id_hash:   '0000000000000000000000000000000000000000000000000000000000000000',   last_relayed_time: 1554589504,   max_used_block_height: 149373,   max_used_block_id_hash:   '3ed0b7d1c294def73dda48c6b3f43d724525fcbc08672782ec3a1e4c5a1b2f01',   receive_time: 1554589504,   relayed: true,   tx_blob: ... ,   tx_json: ... ,  }],untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{
+ spent_key_images:
+ [
+  { id_hash: '12f6051aea57b598e7aefe436545ab55f449b11d392fffd76e33eef53ad9b962',
+    txs_hashes: [Array] },
+   ...
+],
+status: 'OK',
+transactions:
+[
+ { blob_size: 4384,
+   do_not_relay: false,
+   double_spend_seen: false,
+   fee: 37750,
+   id_hash:
+   '3fa2745621696d4e87d997e32409469cc3d734fda186f37878b8db2972a99a41',
+   kept_by_block: false,
+   last_failed_height: 0,
+   last_failed_id_hash:
+   '0000000000000000000000000000000000000000000000000000000000000000',
+   last_relayed_time: 1554589504,
+   max_used_block_height: 149373,
+   max_used_block_id_hash:
+   '3ed0b7d1c294def73dda48c6b3f43d724525fcbc08672782ec3a1e4c5a1b2f01',
+   receive_time: 1554589504,
+   relayed: true,
+   tx_blob: ... ,
+   tx_json: ... ,
+  }
+],
+untrusted: false
+}</code></pre>
 
 
   </div>
@@ -4264,7 +4582,25 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ pool_stats: {  bytes_max: 2785,  bytes_med: 2785,  bytes_min: 2785,  bytes_total: 2785,  fee_total: 22650,  histo_98pc: 0,  num_10m: 0,  num_double_spends: 0,  num_failing: 0,  num_not_relayed: 0,  oldest: 1554589922,  txs_total: 1 }, status: 'OK', untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{
+ pool_stats:
+ {
+  bytes_max: 2785,
+  bytes_med: 2785,
+  bytes_min: 2785,
+  bytes_total: 2785,
+  fee_total: 22650,
+  histo_98pc: 0,
+  num_10m: 0,
+  num_double_spends: 0,
+  num_failing: 0,
+  num_not_relayed: 0,
+  oldest: 1554589922,
+  txs_total: 1
+ },
+ status: 'OK',
+ untrusted: false
+}</code></pre>
 
 
   </div>
@@ -4499,7 +4835,28 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ status: 'OK', txs: [  {   as_hex: '02000202 ... 0f',   as_json: '',   block_height: 140732,   block_timestamp: 1553537372,   double_spend_seen: false,   in_pool: false,   output_indices: [Array],   prunable_as_hex: '',   prunable_hash:   '79f87397ef265f27b32a659e0f3f73496527e2cb97228ee4a82f31ec972bd65b',   pruned_as_hex: '',   tx_hash: 'a43c51e3a216bb702e6be2746c02a366c8e3a05b08b50da5ada8e9481418e350'  } ], txs_as_hex: [ '02000202 ... 0f' ], untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{
+ status: 'OK',
+ txs:
+ [
+  {
+   as_hex: '02000202 ... 0f',
+   as_json: '',
+   block_height: 140732,
+   block_timestamp: 1553537372,
+   double_spend_seen: false,
+   in_pool: false,
+   output_indices: [Array],
+   prunable_as_hex: '',
+   prunable_hash:
+   '79f87397ef265f27b32a659e0f3f73496527e2cb97228ee4a82f31ec972bd65b',
+   pruned_as_hex: '',
+   tx_hash: 'a43c51e3a216bb702e6be2746c02a366c8e3a05b08b50da5ada8e9481418e350'
+  }
+ ],
+ txs_as_hex: [ '02000202 ... 0f' ],
+ untrusted: false
+}</code></pre>
 
 
   </div>
@@ -4942,7 +5299,14 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ active: true, address: 'ar4bfzwH4726kamvTg2wRNLkw16MR6DbbZMyuShYgKs58SknoAF8q7PBQ1XXAsGgH9feTWKKmYZNjaWphc7Wce1u33iKe2cL9', is_background_mining_enabled: true, speed: 2, status: 'OK', threads_count: 1}</code></pre>
+  <pre class="prettyprint"><code>{
+ active: true,
+ address: 'ar4bfzwH4726kamvTg2wRNLkw16MR6DbbZMyuShYgKs58SknoAF8q7PBQ1XXAsGgH9feTWKKmYZNjaWphc7Wce1u33iKe2cL9',
+ is_background_mining_enabled: true,
+ speed: 2,
+ status: 'OK',
+ threads_count: 1
+}</code></pre>
 
 
   </div>
@@ -5423,7 +5787,20 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ double_spend: false, fee_too_low: false, invalid_input: false, invalid_output: false, low_mixin: false, not_rct: false, not_relayed: true, overspend: false, reason: 'Not relayed', status: 'OK', too_big: false, untrusted: false}</code></pre>
+  <pre class="prettyprint"><code>{
+ double_spend: false,
+ fee_too_low: false,
+ invalid_input: false,
+ invalid_output: false,
+ low_mixin: false,
+ not_rct: false,
+ not_relayed: true,
+ overspend: false,
+ reason: 'Not relayed',
+ status: 'OK',
+ too_big: false,
+ untrusted: false
+}</code></pre>
 
 
   </div>
@@ -5630,7 +6007,11 @@ This method includes a starting block height and an ending block height as param
   </p>
 
 
-  <pre class="prettyprint"><code>{ limit_down: 16384, limit_up: 4096, status: 'OK'}</code></pre>
+  <pre class="prettyprint"><code>{
+ limit_down: 16384,
+ limit_up: 4096,
+ status: 'OK'
+}</code></pre>
 
 
   </div>
@@ -5863,7 +6244,10 @@ Level is one of the following:
   </p>
 
 
-  <pre class="prettyprint"><code>{ "categories": "*:INFO", "status": "OK"}</code></pre>
+  <pre class="prettyprint"><code>{
+ "categories": "*:INFO",
+ "status": "OK"
+}</code></pre>
 
 
   </div>
@@ -6037,7 +6421,9 @@ Level is one of the following:
   </p>
 
 
-  <pre class="prettyprint"><code>Error: NOT MININGat _request.then (C:\myDev\arqma-rpc-js\src\rpcDaemon.js:1418:27)at process._tickCallback (internal/process/next_tick.js:68:7)</code></pre>
+  <pre class="prettyprint"><code>Error: NOT MINING
+at _request.then (C:\myDev\scala-rpc-js\src\rpcDaemon.js:1418:27)
+at process._tickCallback (internal/process/next_tick.js:68:7)</code></pre>
 
 
   </div>
@@ -7458,7 +7844,9 @@ Level is one of the following:
   </p>
 
 
-  <pre class="prettyprint"><code>{ Error: Block not accepted  at _request.then (C:\myDev\arqma-rpc-js\src\rpcDaemon.js:761:25)  at process._tickCallback (internal/process/next_tick.js:68:7) code: -7 }</code></pre>
+  <pre class="prettyprint"><code>{ Error: Block not accepted
+  at _request.then (C:\myDev\scala-rpc-js\src\rpcDaemon.js:761:25)
+  at process._tickCallback (internal/process/next_tick.js:68:7) code: -7 }</code></pre>
 
 
   </div>
@@ -7567,7 +7955,20 @@ Level is one of the following:
   </p>
 
 
-  <pre class="prettyprint"><code>{ height: 149027, next_needed_pruning_seed: 0, overview: '[]', peers: [  { info: [Object] },  { info: [Object] },  ... ,  { info: [Object] } ], status: 'OK', target_height: 149009}</code></pre>
+  <pre class="prettyprint"><code>{
+ height: 149027,
+ next_needed_pruning_seed: 0,
+ overview: '[]',
+ peers:
+ [
+  { info: [Object] },
+  { info: [Object] },
+  ... ,
+  { info: [Object] }
+ ],
+ status: 'OK',
+ target_height: 149009
+}</code></pre>
 
 
   </div>

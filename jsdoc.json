@@ -13,15 +13,15 @@
   ],
   "recurseDepth": 2,
   "template": {
-  "title": "ArQmA Javascript RPC Library",
-  "shortTitle": "ArQmA RPC JS",
+  "title": "Scala Javascript RPC Library",
+  "shortTitle": "Scala RPC JS",
   "links": [
     {
-      "github": "https://github.com/arqma/arqma-rpc-js",
+      "github": "https://github.com/scala-network/scala-rpc-js",
       "title": "View it on Github"
     },
     {
-      "npm": "https://www.npmjs.com/package/@arqma/arqma-rpc",
+      "npm": "https://www.npmjs.com/package/@scala/scala-rpc",
       "title": "View it on NPM",
       "size": 19
     }
