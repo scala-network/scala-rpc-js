@@ -1,0 +1,7705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      Scala Javascript RPC Library - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link id="google-font" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Cutive+Mono|Roboto:300,400,700" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="styles/highlight-themes/current.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  <link type="text/css" rel="stylesheet" href="styles/collapsible.css">
+  <link type="text/css" rel="stylesheet" href="styles/style-switcher.css">
+  <link type="text/css" rel="stylesheet" href="styles/selectric.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://embed.runkit.com"></script>
+  <style id="style-switcher-styles">
+    nav {
+        background: #282c34;
+    }
+    .hljs {
+        background: #1d2027;
+    }
+    .nav-container > ul > li.active a {
+        color: #BAB87E;
+    }
+    .nav-container > ul > li.active a:hover {
+        color: #8F8D61;
+    }
+    .nav-container > ul > li.active ul {
+        border-color: #8F8D61;
+    }
+    h4.name {
+        color: #8F8D61;
+    }
+    .params > div > code, .params > div > em {
+        color: #8F8D61;
+    }
+    a, a:active {
+        color: #8F8D61;
+    }
+    .hljs-doctag, .hljs-keyword, .hljs-formula {
+        color: #8F8D61;
+    }
+    nav ul a:hover, nav ul a:active {
+        color: #8F8D61;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header-fixed">
+      <h1>
+        <a href="index.html" title="modernTemplate.title">
+            
+            Scala RPC JS
+        </a>
+      </h1>
+      <div class="center-header">
+          <ul>
+            
+          </ul>
+      </div>
+      <div class="right-header">
+           
+                <a href="https://github.com/scala-network/scala-rpc-js" title="View it on Github" style="">
+                    <i class="fab fa-github-alt"></i>
+                </a>
+           
+                <a href="https://www.npmjs.com/package/scala-rpc-js" title="View it on NPM" style="font-size: 19px">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </a>
+           
+      </div>
+  </header>
+
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <nav>
+    <div id="menu-container" class="scrollbar-inner">
+        <div class="nav-container">
+            <h3>Modules</h3><ul><li id="RPCDaemon-nav"><a href="module-RPCDaemon.html">RPCDaemon</a><ul class='methods'><li data-type="method" id="RPCDaemon-createDaemonClient-nav"><a href="module-RPCDaemon.html#.createDaemonClient">createDaemonClient</a></li><li data-type="method" id="RPCDaemon-flushTxPool-nav"><a href="module-RPCDaemon.html#~flushTxPool">flushTxPool</a></li><li data-type="method" id="RPCDaemon-getAlternateChains-nav"><a href="module-RPCDaemon.html#~getAlternateChains">getAlternateChains</a></li><li data-type="method" id="RPCDaemon-getBans-nav"><a href="module-RPCDaemon.html#~getBans">getBans</a></li><li data-type="method" id="RPCDaemon-getBlock-nav"><a href="module-RPCDaemon.html#~getBlock">getBlock</a></li><li data-type="method" id="RPCDaemon-getBlockCount-nav"><a href="module-RPCDaemon.html#~getBlockCount">getBlockCount</a></li><li data-type="method" id="RPCDaemon-getBlockHash-nav"><a href="module-RPCDaemon.html#~getBlockHash">getBlockHash</a></li><li data-type="method" id="RPCDaemon-getBlockHeaderByHash-nav"><a href="module-RPCDaemon.html#~getBlockHeaderByHash">getBlockHeaderByHash</a></li><li data-type="method" id="RPCDaemon-getBlockHeaderByHeight-nav"><a href="module-RPCDaemon.html#~getBlockHeaderByHeight">getBlockHeaderByHeight</a></li><li data-type="method" id="RPCDaemon-getBlockHeadersRange-nav"><a href="module-RPCDaemon.html#~getBlockHeadersRange">getBlockHeadersRange</a></li><li data-type="method" id="RPCDaemon-getBlocksRange-nav"><a href="module-RPCDaemon.html#~getBlocksRange">getBlocksRange</a></li><li data-type="method" id="RPCDaemon-getBlockTemplate-nav"><a href="module-RPCDaemon.html#~getBlockTemplate">getBlockTemplate</a></li><li data-type="method" id="RPCDaemon-getCoinbaseTxSum-nav"><a href="module-RPCDaemon.html#~getCoinbaseTxSum">getCoinbaseTxSum</a></li><li data-type="method" id="RPCDaemon-getConnections-nav"><a href="module-RPCDaemon.html#~getConnections">getConnections</a></li><li data-type="method" id="RPCDaemon-getFeeEstimate-nav"><a href="module-RPCDaemon.html#~getFeeEstimate">getFeeEstimate</a></li><li data-type="method" id="RPCDaemon-getHardForkInfo-nav"><a href="module-RPCDaemon.html#~getHardForkInfo">getHardForkInfo</a></li><li data-type="method" id="RPCDaemon-getInfo-nav"><a href="module-RPCDaemon.html#~getInfo">getInfo</a></li><li data-type="method" id="RPCDaemon-getLastBlockHeader-nav"><a href="module-RPCDaemon.html#~getLastBlockHeader">getLastBlockHeader</a></li><li data-type="method" id="RPCDaemon-getOutputDistribution-nav"><a href="module-RPCDaemon.html#~getOutputDistribution">getOutputDistribution</a></li><li data-type="method" id="RPCDaemon-getOutputHistogram-nav"><a href="module-RPCDaemon.html#~getOutputHistogram">getOutputHistogram</a></li><li data-type="method" id="RPCDaemon-getVersion-nav"><a href="module-RPCDaemon.html#~getVersion">getVersion</a></li><li data-type="method" id="RPCDaemon-otherGetAltBlocksHashes-nav"><a href="module-RPCDaemon.html#~otherGetAltBlocksHashes">otherGetAltBlocksHashes</a></li><li data-type="method" id="RPCDaemon-otherGetHeight-nav"><a href="module-RPCDaemon.html#~otherGetHeight">otherGetHeight</a></li><li data-type="method" id="RPCDaemon-otherGetLimit-nav"><a href="module-RPCDaemon.html#~otherGetLimit">otherGetLimit</a></li><li data-type="method" id="RPCDaemon-otherGetPeerList-nav"><a href="module-RPCDaemon.html#~otherGetPeerList">otherGetPeerList</a></li><li data-type="method" id="RPCDaemon-otherGetTransactionPool-nav"><a href="module-RPCDaemon.html#~otherGetTransactionPool">otherGetTransactionPool</a></li><li data-type="method" id="RPCDaemon-otherGetTransactionPoolStats-nav"><a href="module-RPCDaemon.html#~otherGetTransactionPoolStats">otherGetTransactionPoolStats</a></li><li data-type="method" id="RPCDaemon-otherGetTransactions-nav"><a href="module-RPCDaemon.html#~otherGetTransactions">otherGetTransactions</a></li><li data-type="method" id="RPCDaemon-otherInPeers-nav"><a href="module-RPCDaemon.html#~otherInPeers">otherInPeers</a></li><li data-type="method" id="RPCDaemon-otherIsKeyImageSpent-nav"><a href="module-RPCDaemon.html#~otherIsKeyImageSpent">otherIsKeyImageSpent</a></li><li data-type="method" id="RPCDaemon-otherMiningStatus-nav"><a href="module-RPCDaemon.html#~otherMiningStatus">otherMiningStatus</a></li><li data-type="method" id="RPCDaemon-otherOutPeers-nav"><a href="module-RPCDaemon.html#~otherOutPeers">otherOutPeers</a></li><li data-type="method" id="RPCDaemon-otherSaveBc-nav"><a href="module-RPCDaemon.html#~otherSaveBc">otherSaveBc</a></li><li data-type="method" id="RPCDaemon-otherSendRawTransaction-nav"><a href="module-RPCDaemon.html#~otherSendRawTransaction">otherSendRawTransaction</a></li><li data-type="method" id="RPCDaemon-otherSetLimit-nav"><a href="module-RPCDaemon.html#~otherSetLimit">otherSetLimit</a></li><li data-type="method" id="RPCDaemon-otherSetLogCategories-nav"><a href="module-RPCDaemon.html#~otherSetLogCategories">otherSetLogCategories</a></li><li data-type="method" id="RPCDaemon-otherSetLogHashrate-nav"><a href="module-RPCDaemon.html#~otherSetLogHashrate">otherSetLogHashrate</a></li><li data-type="method" id="RPCDaemon-otherSetLogLevel-nav"><a href="module-RPCDaemon.html#~otherSetLogLevel">otherSetLogLevel</a></li><li data-type="method" id="RPCDaemon-otherStartMining-nav"><a href="module-RPCDaemon.html#~otherStartMining">otherStartMining</a></li><li data-type="method" id="RPCDaemon-otherStopDaemon-nav"><a href="module-RPCDaemon.html#~otherStopDaemon">otherStopDaemon</a></li><li data-type="method" id="RPCDaemon-otherStopMining-nav"><a href="module-RPCDaemon.html#~otherStopMining">otherStopMining</a></li><li data-type="method" id="RPCDaemon-relayTx-nav"><a href="module-RPCDaemon.html#~relayTx">relayTx</a></li><li data-type="method" id="RPCDaemon-resetNonces-nav"><a href="module-RPCDaemon.html#~resetNonces">resetNonces</a></li><li data-type="method" id="RPCDaemon-setBans-nav"><a href="module-RPCDaemon.html#~setBans">setBans</a></li><li data-type="method" id="RPCDaemon-sslRejectUnauthorized-nav"><a href="module-RPCDaemon.html#~sslRejectUnauthorized">sslRejectUnauthorized</a></li><li data-type="method" id="RPCDaemon-submitBlock-nav"><a href="module-RPCDaemon.html#~submitBlock">submitBlock</a></li><li data-type="method" id="RPCDaemon-syncInfo-nav"><a href="module-RPCDaemon.html#~syncInfo">syncInfo</a></li></ul></li><li id="RPCWallet-nav"><a href="module-RPCWallet.html">RPCWallet</a><ul class='methods'><li data-type="method" id="RPCWallet-createWalletClient-nav"><a href="module-RPCWallet.html#.createWalletClient">createWalletClient</a></li><li data-type="method" id="RPCWallet-addAddressBook-nav"><a href="module-RPCWallet.html#~addAddressBook">addAddressBook</a></li><li data-type="method" id="RPCWallet-autoRefresh-nav"><a href="module-RPCWallet.html#~autoRefresh">autoRefresh</a></li><li data-type="method" id="RPCWallet-changeWalletPassword-nav"><a href="module-RPCWallet.html#~changeWalletPassword">changeWalletPassword</a></li><li data-type="method" id="RPCWallet-checkReserveProof-nav"><a href="module-RPCWallet.html#~checkReserveProof">checkReserveProof</a></li><li data-type="method" id="RPCWallet-checkSpendProof-nav"><a href="module-RPCWallet.html#~checkSpendProof">checkSpendProof</a></li><li data-type="method" id="RPCWallet-checkTxKey-nav"><a href="module-RPCWallet.html#~checkTxKey">checkTxKey</a></li><li data-type="method" id="RPCWallet-checkTxProof-nav"><a href="module-RPCWallet.html#~checkTxProof">checkTxProof</a></li><li data-type="method" id="RPCWallet-closeWallet-nav"><a href="module-RPCWallet.html#~closeWallet">closeWallet</a></li><li data-type="method" id="RPCWallet-createAccount-nav"><a href="module-RPCWallet.html#~createAccount">createAccount</a></li><li data-type="method" id="RPCWallet-createAddress-nav"><a href="module-RPCWallet.html#~createAddress">createAddress</a></li><li data-type="method" id="RPCWallet-createWallet-nav"><a href="module-RPCWallet.html#~createWallet">createWallet</a></li><li data-type="method" id="RPCWallet-deleteAddressBook-nav"><a href="module-RPCWallet.html#~deleteAddressBook">deleteAddressBook</a></li><li data-type="method" id="RPCWallet-exportKeyImages-nav"><a href="module-RPCWallet.html#~exportKeyImages">exportKeyImages</a></li><li data-type="method" id="RPCWallet-exportMultisigInfo-nav"><a href="module-RPCWallet.html#~exportMultisigInfo">exportMultisigInfo</a></li><li data-type="method" id="RPCWallet-exportOutputs-nav"><a href="module-RPCWallet.html#~exportOutputs">exportOutputs</a></li><li data-type="method" id="RPCWallet-finalizeMultisig-nav"><a href="module-RPCWallet.html#~finalizeMultisig">finalizeMultisig</a></li><li data-type="method" id="RPCWallet-generateFromKeys-nav"><a href="module-RPCWallet.html#~generateFromKeys">generateFromKeys</a></li><li data-type="method" id="RPCWallet-getAccounts-nav"><a href="module-RPCWallet.html#~getAccounts">getAccounts</a></li><li data-type="method" id="RPCWallet-getAccountTags-nav"><a href="module-RPCWallet.html#~getAccountTags">getAccountTags</a></li><li data-type="method" id="RPCWallet-getAddress-nav"><a href="module-RPCWallet.html#~getAddress">getAddress</a></li><li data-type="method" id="RPCWallet-getAddressBook-nav"><a href="module-RPCWallet.html#~getAddressBook">getAddressBook</a></li><li data-type="method" id="RPCWallet-getAddressIndex-nav"><a href="module-RPCWallet.html#~getAddressIndex">getAddressIndex</a></li><li data-type="method" id="RPCWallet-getAttribute-nav"><a href="module-RPCWallet.html#~getAttribute">getAttribute</a></li><li data-type="method" id="RPCWallet-getBalance-nav"><a href="module-RPCWallet.html#~getBalance">getBalance</a></li><li data-type="method" id="RPCWallet-getBulkPayments-nav"><a href="module-RPCWallet.html#~getBulkPayments">getBulkPayments</a></li><li data-type="method" id="RPCWallet-getHeight-nav"><a href="module-RPCWallet.html#~getHeight">getHeight</a></li><li data-type="method" id="RPCWallet-getLanguages-nav"><a href="module-RPCWallet.html#~getLanguages">getLanguages</a></li><li data-type="method" id="RPCWallet-getPayments-nav"><a href="module-RPCWallet.html#~getPayments">getPayments</a></li><li data-type="method" id="RPCWallet-getReserveProof-nav"><a href="module-RPCWallet.html#~getReserveProof">getReserveProof</a></li><li data-type="method" id="RPCWallet-getSpendProof-nav"><a href="module-RPCWallet.html#~getSpendProof">getSpendProof</a></li><li data-type="method" id="RPCWallet-getTransferByTxId-nav"><a href="module-RPCWallet.html#~getTransferByTxId">getTransferByTxId</a></li><li data-type="method" id="RPCWallet-getTransfers-nav"><a href="module-RPCWallet.html#~getTransfers">getTransfers</a></li><li data-type="method" id="RPCWallet-getTxKey-nav"><a href="module-RPCWallet.html#~getTxKey">getTxKey</a></li><li data-type="method" id="RPCWallet-getTxNotes-nav"><a href="module-RPCWallet.html#~getTxNotes">getTxNotes</a></li><li data-type="method" id="RPCWallet-getTxProof-nav"><a href="module-RPCWallet.html#~getTxProof">getTxProof</a></li><li data-type="method" id="RPCWallet-getVersion-nav"><a href="module-RPCWallet.html#~getVersion">getVersion</a></li><li data-type="method" id="RPCWallet-importKeyImages-nav"><a href="module-RPCWallet.html#~importKeyImages">importKeyImages</a></li><li data-type="method" id="RPCWallet-importMultisigInfo-nav"><a href="module-RPCWallet.html#~importMultisigInfo">importMultisigInfo</a></li><li data-type="method" id="RPCWallet-importOutputs-nav"><a href="module-RPCWallet.html#~importOutputs">importOutputs</a></li><li data-type="method" id="RPCWallet-incomingTransfers-nav"><a href="module-RPCWallet.html#~incomingTransfers">incomingTransfers</a></li><li data-type="method" id="RPCWallet-isMultisig-nav"><a href="module-RPCWallet.html#~isMultisig">isMultisig</a></li><li data-type="method" id="RPCWallet-labelAccount-nav"><a href="module-RPCWallet.html#~labelAccount">labelAccount</a></li><li data-type="method" id="RPCWallet-labelAddress-nav"><a href="module-RPCWallet.html#~labelAddress">labelAddress</a></li><li data-type="method" id="RPCWallet-makeIntegratedAddress-nav"><a href="module-RPCWallet.html#~makeIntegratedAddress">makeIntegratedAddress</a></li><li data-type="method" id="RPCWallet-makeMultisig-nav"><a href="module-RPCWallet.html#~makeMultisig">makeMultisig</a></li><li data-type="method" id="RPCWallet-makeUri-nav"><a href="module-RPCWallet.html#~makeUri">makeUri</a></li><li data-type="method" id="RPCWallet-openWallet-nav"><a href="module-RPCWallet.html#~openWallet">openWallet</a></li><li data-type="method" id="RPCWallet-parseUri-nav"><a href="module-RPCWallet.html#~parseUri">parseUri</a></li><li data-type="method" id="RPCWallet-prepareMultisig-nav"><a href="module-RPCWallet.html#~prepareMultisig">prepareMultisig</a></li><li data-type="method" id="RPCWallet-queryKey-nav"><a href="module-RPCWallet.html#~queryKey">queryKey</a></li><li data-type="method" id="RPCWallet-refresh-nav"><a href="module-RPCWallet.html#~refresh">refresh</a></li><li data-type="method" id="RPCWallet-relayTx-nav"><a href="module-RPCWallet.html#~relayTx">relayTx</a></li><li data-type="method" id="RPCWallet-rescanBlockchain-nav"><a href="module-RPCWallet.html#~rescanBlockchain">rescanBlockchain</a></li><li data-type="method" id="RPCWallet-rescanSpent-nav"><a href="module-RPCWallet.html#~rescanSpent">rescanSpent</a></li><li data-type="method" id="RPCWallet-resetNonces-nav"><a href="module-RPCWallet.html#~resetNonces">resetNonces</a></li><li data-type="method" id="RPCWallet-restoreDeterministicWallet-nav"><a href="module-RPCWallet.html#~restoreDeterministicWallet">restoreDeterministicWallet</a></li><li data-type="method" id="RPCWallet-setAccountTagDescription-nav"><a href="module-RPCWallet.html#~setAccountTagDescription">setAccountTagDescription</a></li><li data-type="method" id="RPCWallet-setAttribute-nav"><a href="module-RPCWallet.html#~setAttribute">setAttribute</a></li><li data-type="method" id="RPCWallet-setDaemon-nav"><a href="module-RPCWallet.html#~setDaemon">setDaemon</a></li><li data-type="method" id="RPCWallet-setLogCategories-nav"><a href="module-RPCWallet.html#~setLogCategories">setLogCategories</a></li><li data-type="method" id="RPCWallet-setLogLevel-nav"><a href="module-RPCWallet.html#~setLogLevel">setLogLevel</a></li><li data-type="method" id="RPCWallet-setTxNotes-nav"><a href="module-RPCWallet.html#~setTxNotes">setTxNotes</a></li><li data-type="method" id="RPCWallet-sign-nav"><a href="module-RPCWallet.html#~sign">sign</a></li><li data-type="method" id="RPCWallet-signMultisig-nav"><a href="module-RPCWallet.html#~signMultisig">signMultisig</a></li><li data-type="method" id="RPCWallet-signTransfer-nav"><a href="module-RPCWallet.html#~signTransfer">signTransfer</a></li><li data-type="method" id="RPCWallet-splitIntegratedAddress-nav"><a href="module-RPCWallet.html#~splitIntegratedAddress">splitIntegratedAddress</a></li><li data-type="method" id="RPCWallet-sslRejectUnauthorized-nav"><a href="module-RPCWallet.html#~sslRejectUnauthorized">sslRejectUnauthorized</a></li><li data-type="method" id="RPCWallet-startMining-nav"><a href="module-RPCWallet.html#~startMining">startMining</a></li><li data-type="method" id="RPCWallet-stopMining-nav"><a href="module-RPCWallet.html#~stopMining">stopMining</a></li><li data-type="method" id="RPCWallet-stopWallet-nav"><a href="module-RPCWallet.html#~stopWallet">stopWallet</a></li><li data-type="method" id="RPCWallet-store-nav"><a href="module-RPCWallet.html#~store">store</a></li><li data-type="method" id="RPCWallet-submitMultisig-nav"><a href="module-RPCWallet.html#~submitMultisig">submitMultisig</a></li><li data-type="method" id="RPCWallet-submitTransfer-nav"><a href="module-RPCWallet.html#~submitTransfer">submitTransfer</a></li><li data-type="method" id="RPCWallet-sweepAll-nav"><a href="module-RPCWallet.html#~sweepAll">sweepAll</a></li><li data-type="method" id="RPCWallet-sweepDust-nav"><a href="module-RPCWallet.html#~sweepDust">sweepDust</a></li><li data-type="method" id="RPCWallet-sweepSingle-nav"><a href="module-RPCWallet.html#~sweepSingle">sweepSingle</a></li><li data-type="method" id="RPCWallet-tagAccounts-nav"><a href="module-RPCWallet.html#~tagAccounts">tagAccounts</a></li><li data-type="method" id="RPCWallet-transfer-nav"><a href="module-RPCWallet.html#~transfer">transfer</a></li><li data-type="method" id="RPCWallet-transferSplit-nav"><a href="module-RPCWallet.html#~transferSplit">transferSplit</a></li><li data-type="method" id="RPCWallet-untagAccounts-nav"><a href="module-RPCWallet.html#~untagAccounts">untagAccounts</a></li><li data-type="method" id="RPCWallet-validateAddress-nav"><a href="module-RPCWallet.html#~validateAddress">validateAddress</a></li><li data-type="method" id="RPCWallet-verify-nav"><a href="module-RPCWallet.html#~verify">verify</a></li></ul></li></ul>
+        </div>
+    </div>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        RPCDaemon
+      </h1>
+    
+
+    
+
+<section id="section-container">
+  <article>
+    <div class="container-overview">
+      
+        
+
+        
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.createDaemonClient">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".createDaemonClient">
+      <span class="type-signature">(static) </span>.createDaemonClient<span class="signature">(opts)</span><span class="type-signature"> &rarr; {RPCDaemon}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Factory that creates a RPCDaemon client object.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>url</code>
+               <em>(
+    <span class="param-type">
+      string
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>complete url with port 'http://127.0.0.1:20000' or 'https://127.0.0.1:20000'.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>username</code>
+               <em>(
+    <span class="param-type">
+      string
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>username.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>password</code>
+               <em>(
+    <span class="param-type">
+      string
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>password.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line37">line 37</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~flushTxPool">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~flushTxPool">
+      <span class="type-signature">(async, inner) </span>.flushTxPool<span class="signature">(opts<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Flush tx ids from transaction pool.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>txids</code>
+               <em>(
+    <span class="param-type">
+      Array.&lt;string>
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>list of transactions IDs to flush from pool (all tx ids flushed if empty).</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line83">line 83</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#flushTxPool-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="flushTxPool-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK' }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getAlternateChains">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getAlternateChains">
+      <span class="type-signature">(async, inner) </span>.getAlternateChains<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Display alternative chains seen by the node.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line94">line 94</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getAlternateChains-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getAlternateChains-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK' }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getBans">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getBans">
+      <span class="type-signature">(async, inner) </span>.getBans<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get list of banned IPs.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line111">line 111</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getBans-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getBans-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ bans: [  { host: '192.168.1.50', ip: 838969536, seconds: 30 },  { host: '192.168.1.51', ip: 855746752, seconds: 30 } ], status: 'OK'}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getBlock">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getBlock">
+      <span class="type-signature">(async, inner) </span>.getBlock<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Full block information can be retrieved by either block height or hash.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>height</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>The block's height.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>hash</code>
+               <em>(
+    <span class="param-type">
+      string
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>The block's hash.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line164">line 164</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getBlock-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getBlock-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ blob: '0a0ab294a0e305be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e        743b62008002a6fc0601ff94fc0601a5a7a3bf4702f0f7be480164ced3d5d28c49dd9baeb5ab2bd3        29910838afd3e26cd85ad49b3e6101311398a1783551ba88c64c00135d0439d982fc4d70f48e1dff        cca8146454e84303210091abcad5e3b8bc208e5361ffeebbb68a35e102a5225f4865e3503cf7e76a        ff92021b000000000000000000000000005602009e000000000000000000000000', block_header: {  block_size: 147,  cumulative_difficulty: 16146009479722,  depth: 31535,  difficulty: 109000131,  hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',  height: 114196,  major_version: 10,  minor_version: 10,  nonce: 2147508795,  num_txes: 0,  orphan_status: false,  pow_hash: '',  prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',  reward: 19191616421,  timestamp: 1550322226 }, json: '{\n  "major_version": 10, \n  "minor_version": 10, \n  "timestamp": 15503222 26, \n  "prev_id": "be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf2 4e74", \n  "nonce": 2147508795, \n  "miner_tx": {\n    "version": 2, \n    "unlo ck_time": 114214, \n    "vin": [ {\n        "gen": {\n          "height": 114196 \n        }\n      }\n    ], \n    "vout": [ {\n        "amount": 19191616421, \ n        "target": {\n          "key": "f0f7be480164ced3d5d28c49dd9baeb5ab2bd329 910838afd3e26cd85ad49b3e"\n        }\n      }\n    ], \n    "extra": [ 1, 49, 19 , 152, 161, 120, 53, 81, 186, 136, 198, 76, 0, 19, 93, 4, 57, 217, 130, 252, 77, 112, 244, 142, 29, 255, 204, 168, 20, 100, 84, 232, 67, 3, 33, 0, 145, 171, 202 , 213, 227, 184, 188, 32, 142, 83, 97, 255, 238, 187, 182, 138, 53, 225, 2, 165, 34, 95, 72, 101, 227, 80, 60, 247, 231, 106, 255, 146, 2, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 86, 2, 0, 158, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\n    ], \n "rct_signatures": {\n      "type": 0\n    }\n  }, \n  "tx_hashes": [ ]\n}', miner_tx_hash: '691e09ce198a2953c391a292ed79d7a239ec929740503400a0ab3e3ee8cfad84', status: 'OK', untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getBlockCount">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getBlockCount">
+      <span class="type-signature">(async, inner) </span>.getBlockCount<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Look up how many blocks are in the longest chain known to the node.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line185">line 185</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getBlockCount-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getBlockCount-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ count: 144188, status: 'OK'}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getBlockHash">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getBlockHash">
+      <span class="type-signature">(async, inner) </span>.getBlockHash<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Look up a block's hash by its height.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>height</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>block height.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line197">line 197</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getBlockHash-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getBlockHash-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>6115a8e9902af15d31d14c698621d54e9bb594b0da053591ec5d1ceb537960ea</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getBlockHeaderByHash">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getBlockHeaderByHash">
+      <span class="type-signature">(async, inner) </span>.getBlockHeaderByHash<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Block header information can be retrieved using hash.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>hash</code>
+               <em>(
+    <span class="param-type">
+      string
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>The block's sha256 hash.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line246">line 246</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getBlockHeaderByHash-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getBlockHeaderByHash-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ block_header: {  block_size: 147,  cumulative_difficulty: 16146009479722,  depth: 30823,  difficulty: 109000131,  hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',  height: 114196,  major_version: 10,  minor_version: 10,  nonce: 2147508795,  num_txes: 0,  orphan_status: false,  pow_hash: '',  prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',  reward: 19191616421,  timestamp: 1550322226 }, status: 'OK', untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getBlockHeaderByHeight">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getBlockHeaderByHeight">
+      <span class="type-signature">(async, inner) </span>.getBlockHeaderByHeight<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Block header information can be retrieved using height.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>height</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>The block's height.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line281">line 281</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getBlockHeaderByHeight-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getBlockHeaderByHeight-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ block_header: {  block_size: 147,  cumulative_difficulty: 16146009479722,  depth: 30823,  difficulty: 109000131,  hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',  height: 114196,  major_version: 10,  minor_version: 10,  nonce: 2147508795,  num_txes: 0,  orphan_status: false,  pow_hash: '',  prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',  reward: 19191616421,  timestamp: 1550322226 }, status: 'OK', untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getBlockHeadersRange">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getBlockHeadersRange">
+      <span class="type-signature">(async, inner) </span>.getBlockHeadersRange<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Similar to get_block_header_by_height above, but for a range of blocks.
+This method includes a starting block height and an ending block height as parameters.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>start_height</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>The starting block's height.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>end_height</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>The ending block's height.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line337">line 337</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getBlockHeadersRange-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getBlockHeadersRange-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ headers: [  {   block_size: 147,   cumulative_difficulty: 16146009479722,   depth: 30831,   difficulty: 109000131,   hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',   height: 114196,   major_version: 10,   minor_version: 10,   nonce: 2147508795,   num_txes: 0,   orphan_status: false,   pow_hash: '',   prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',   reward: 19191616421,   timestamp: 1550322226  },  {   block_size: 147,   cumulative_difficulty: 16146120479856,   depth: 30830,   difficulty: 111000134,   hash: 'c27c128325bb3f47d76816789995d376268ee25f3cdcfb714580e34fe5cc8e08',   height: 114197,   major_version: 10,   minor_version: 10,   nonce: 541065496,   num_txes: 0,   orphan_status: false,   pow_hash: '',   prev_hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',   reward: 19191607270,   timestamp: 1550322551  } ], status: 'OK', untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getBlocksRange">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getBlocksRange">
+      <span class="type-signature">(async, inner) </span>.getBlocksRange<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Return a range of blocks containing the block header and its attached transactions.
+The first transaction in block is the coinbase transaction.
+This method includes a starting block height and an ending block height as parameters.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>start_height</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>The starting block's height.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>end_height</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>The ending block's height.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line364">line 364</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getBlocksRange-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getBlocksRange-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ blocks: [  { block_header: [Object], txs: [Array] },  { block_header: [Object], txs: [Array] } ], status: 'OK', untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getBlockTemplate">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getBlockTemplate">
+      <span class="type-signature">(async, inner) </span>.getBlockTemplate<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get a block template on which mining a new block.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>wallet_address</code>
+               <em>(
+    <span class="param-type">
+      string
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>Address of wallet to receive coinbase transactions if block is successfully mined.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>reserve_size</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>Reserve size.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line397">line 397</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getBlockTemplate-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getBlockTemplate-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ blockhashing_blob: '0b0bdc83ffe405686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a                    9000000000cc172232b1465580877b898f8f6021ad264705fb44d4ce4116576c951865dc6e02', blocktemplate_blob: '0b0bdc83ffe405686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a                     900000000002b3e70801ffa1e70801919ef5bc46027fecb474827691e150863765eeb11c7fda                     e88e9cf413468b3f46a6fd1416174f2101958d80e5dd64b962d539a18e2fab89cd6abf1ddd2d                     f4b6c2b890c1fad31acd310001eae8de4b74bf117c059ba9b68c9e81a2465997319dd5805a90                     dfae8290b33ab9', difficulty: 58700182, expected_reward: 18918231825, height: 144289, prev_hash: '686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a90', reserved_offset: 127, status: 'OK', untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getCoinbaseTxSum">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getCoinbaseTxSum">
+      <span class="type-signature">(async, inner) </span>.getCoinbaseTxSum<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get the coinbase amount and the fees ammount for n last blocks starting at particular height.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>height</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>unsigned int; Block height from which getting the amounts.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>count</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>unsigned int; number of blocks to include in the sum</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line419">line 419</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getCoinbaseTxSum-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getCoinbaseTxSum-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ emission_amount: 7502006245466748, fee_amount: 0, status: 'OK'}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getConnections">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getConnections">
+      <span class="type-signature">(async, inner) </span>.getConnections<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Retrieve information about incoming and outgoing connections to your node.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line462">line 462</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getConnections-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getConnections-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ connections: [  {   address: '192.154.226.212:19993',   avg_download: 1,   avg_upload: 0,   connection_id: 'cb8f0270c5b740fa9eb7aa1aedddb5cb',   current_download: 2,   current_upload: 0,   height: 145745,   host: '192.154.226.212',   incoming: false,   ip: '192.154.226.212',   live_time: 20,   local_ip: false,   localhost: false,   peer_id: 'c7f323892fb18784',   port: '19993',   pruning_seed: 0,   recv_count: 22852,   recv_idle_time: 13,   send_count: 568,   send_idle_time: 13,   state: 'normal',   support_flags: 1  }, ... ]}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getFeeEstimate">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getFeeEstimate">
+      <span class="type-signature">(async, inner) </span>.getFeeEstimate<span class="signature">(opts<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Gives an estimation on fees per kB.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>grace_blocks</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>unsigned int.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line473">line 473</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getFeeEstimate-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getFeeEstimate-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ fee: 7560, status: 'OK', untrusted: false }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getHardForkInfo">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getHardForkInfo">
+      <span class="type-signature">(async, inner) </span>.getHardForkInfo<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Look up information regarding hard fork voting and readiness.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line496">line 496</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getHardForkInfo-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getHardForkInfo-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ earliest_height: 131650, enabled: true, state: 2, status: 'OK', threshold: 0, untrusted: false, version: 11, votes: 10080, voting: 11, window: 10080}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getInfo">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getInfo">
+      <span class="type-signature">(async, inner) </span>.getInfo<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Retrieve general information about the state of your node and the network.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line536">line 536</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getInfo-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getInfo-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ alt_blocks_count: 0, block_size_limit: 600000, block_size_median: 147, bootstrap_daemon_address: '', cumulative_difficulty: 20431347989483, database_size: 0, difficulty: 75600102, free_space: 243485646848, grey_peerlist_size: 62, height: 145746, height_without_bootstrap: 145746, incoming_connections_count: 7, mainnet: true, nettype: 'mainnet', offline: false, outgoing_connections_count: 8, rpc_connections_count: 2, stagenet: false, start_time: 1554144733, status: 'OK', target: 120, target_height: 145732, testnet: false, top_block_hash: '9df96b39bb2ca8953cbf8f2fffc8f9896a74f430cbe29dc0ad356986ef93024c', tx_count: 179362, tx_pool_size: 10, untrusted: false, was_bootstrap_ever_used: false, white_peerlist_size: 38}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getLastBlockHeader">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getLastBlockHeader">
+      <span class="type-signature">(async, inner) </span>.getLastBlockHeader<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Block header information for the most recent block is easily retrieved with this method.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line569">line 569</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getLastBlockHeader-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getLastBlockHeader-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ block_header: {   block_size: 147,   cumulative_difficulty: 20379479802883,   depth: 0,   difficulty: 61400097,   hash: 'c99c2f9a53e4bab5d08f9820ee555d62059e0e9bf799fbe07a6137aac607f4e8',   height: 145009,   major_version: 11,   minor_version: 11,   nonce: 3441194797,   num_txes: 0,   orphan_status: false,   pow_hash: '',   prev_hash: '53d6437ac32fc49e0ee8b24f63046c6e1e6e0491f6d1b6797b025b66ad1b4a40',   reward: 18911700042,   timestamp: 1554058920 },   status: 'OK',   untrusted: false } count: 144188, status: 'OK'}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getOutputDistribution">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getOutputDistribution">
+      <span class="type-signature">(async, inner) </span>.getOutputDistribution<span class="signature">(opts)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get Ouput Distribution.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>amounts</code>
+               <em>(
+    <span class="param-type">
+      Array.&lt;number>
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>list of amounts to look for.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>cumulative</code>
+               <em>(
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>(default is false) States if the result should be cumulative (true or false).</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>from_height</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>(default is 0) - unsigned int.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>to_height</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>(default is 0) - unsigned int.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line583">line 583</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getOutputDistribution-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getOutputDistribution-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK', untrusted: false }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getOutputHistogram">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getOutputHistogram">
+      <span class="type-signature">(async, inner) </span>.getOutputHistogram<span class="signature">(opts<span class="signature-attributes">opt</span>, unlocked<span class="signature-attributes">opt</span>, recent_cutoff<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get a histogram of output amounts.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>amounts</code>
+               <em>(
+    <span class="param-type">
+      Array.&lt;number>
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>list of unsigned int.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>min_count</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>unsigned int.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>max_count</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>unsigned int.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+      <div>
+          
+               <code>unlocked</code>
+               <em>(
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>boolean.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>recent_cutoff</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>unsigned int.</p>
+
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line621">line 621</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getOutputHistogram-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getOutputHistogram-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ histogram: [  {   amount: 10000000,   recent_instances: 0,   total_instances: 1481,   unlocked_instances: 0  } ], status: 'OK', untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getVersion">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getVersion">
+      <span class="type-signature">(async, inner) </span>.getVersion<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Give the node current version.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line639">line 639</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getVersion-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getVersion-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK', untrusted: false, version: 131077 }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherGetAltBlocksHashes">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherGetAltBlocksHashes">
+      <span class="type-signature">(async, inner) </span>.otherGetAltBlocksHashes<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get the known blocks hashes which are not on the main chain.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line647">line 647</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherGetHeight">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherGetHeight">
+      <span class="type-signature">(async, inner) </span>.otherGetHeight<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get the node's current height.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line656">line 656</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherGetHeight-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherGetHeight-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ height: 149045, status: 'OK', untrusted: false }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherGetLimit">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherGetLimit">
+      <span class="type-signature">(async, inner) </span>.otherGetLimit<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get daemon bandwidth limits.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line671">line 671</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherGetLimit-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherGetLimit-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ "limit_down": 8192, "limit_up": 128, "status": "OK", "untrusted": false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherGetPeerList">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherGetPeerList">
+      <span class="type-signature">(async, inner) </span>.otherGetPeerList<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get the known peers list.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line701">line 701</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherGetPeerList-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherGetPeerList-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ gray_list: [  { host: '135790251',    id: 17703185689409910000,    ip: 135790251,    last_seen: 1551473999,    port: 19993,    pruning_seed: 0 }, ... ] status: 'OK', white_list: [  { host: '35263064',    id: 3764929947382960000,    ip: 35263064,    last_seen: 1554553579,    port: 19993,    pruning_seed: 0 }, ... ]}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherGetTransactionPool">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherGetTransactionPool">
+      <span class="type-signature">(async, inner) </span>.otherGetTransactionPool<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Show information about valid transactions seen by the node but not yet mined into a block, as well as spent key image information for the txpool in the node's memory.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line742">line 742</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherGetTransactionPool-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherGetTransactionPool-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ spent_key_images: [  { id_hash: '12f6051aea57b598e7aefe436545ab55f449b11d392fffd76e33eef53ad9b962',    txs_hashes: [Array] },   ...],status: 'OK',transactions:[ { blob_size: 4384,   do_not_relay: false,   double_spend_seen: false,   fee: 37750,   id_hash:   '3fa2745621696d4e87d997e32409469cc3d734fda186f37878b8db2972a99a41',   kept_by_block: false,   last_failed_height: 0,   last_failed_id_hash:   '0000000000000000000000000000000000000000000000000000000000000000',   last_relayed_time: 1554589504,   max_used_block_height: 149373,   max_used_block_id_hash:   '3ed0b7d1c294def73dda48c6b3f43d724525fcbc08672782ec3a1e4c5a1b2f01',   receive_time: 1554589504,   relayed: true,   tx_blob: ... ,   tx_json: ... ,  }],untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherGetTransactionPoolStats">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherGetTransactionPoolStats">
+      <span class="type-signature">(async, inner) </span>.otherGetTransactionPoolStats<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get the transaction pool statistics.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line770">line 770</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherGetTransactionPoolStats-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherGetTransactionPoolStats-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ pool_stats: {  bytes_max: 2785,  bytes_med: 2785,  bytes_min: 2785,  bytes_total: 2785,  fee_total: 22650,  histo_98pc: 0,  num_10m: 0,  num_double_spends: 0,  num_failing: 0,  num_not_relayed: 0,  oldest: 1554589922,  txs_total: 1 }, status: 'OK', untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherGetTransactions">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherGetTransactions">
+      <span class="type-signature">(async, inner) </span>.otherGetTransactions<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Full block information can be retrieved by either block height or hash.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>tx_hashes</code>
+               <em>(
+    <span class="param-type">
+      Array.&lt;string>
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>List of transaction hashes to look up.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>decode_as_json</code>
+               <em>(
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>(false by default). If set true, the returned transaction information will be decoded rather than binary.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>prune</code>
+               <em>(
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>(false by default).</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line805">line 805</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherGetTransactions-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherGetTransactions-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK', txs: [  {   as_hex: '02000202 ... 0f',   as_json: '',   block_height: 140732,   block_timestamp: 1553537372,   double_spend_seen: false,   in_pool: false,   output_indices: [Array],   prunable_as_hex: '',   prunable_hash:   '79f87397ef265f27b32a659e0f3f73496527e2cb97228ee4a82f31ec972bd65b',   pruned_as_hex: '',   tx_hash: 'a43c51e3a216bb702e6be2746c02a366c8e3a05b08b50da5ada8e9481418e350'  } ], txs_as_hex: [ '02000202 ... 0f' ], untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherInPeers">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherInPeers">
+      <span class="type-signature">(async, inner) </span>.otherInPeers<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Limit number of incoming peers.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>in_peers</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>Max number of incoming peers.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line838">line 838</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherInPeers-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherInPeers-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK' }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherIsKeyImageSpent">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherIsKeyImageSpent">
+      <span class="type-signature">(async, inner) </span>.otherIsKeyImageSpent<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Check if outputs have been spent using the key image associated with the output.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>key_images</code>
+               <em>(
+    <span class="param-type">
+      Array.&lt;string>
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>list of block blobs which have been mined.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line824">line 824</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherIsKeyImageSpent-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherIsKeyImageSpent-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ spent_status: [ 1 ], status: 'OK', untrusted: false }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherMiningStatus">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherMiningStatus">
+      <span class="type-signature">(async, inner) </span>.otherMiningStatus<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get the mining status of the daemon.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line871">line 871</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherMiningStatus-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherMiningStatus-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ active: true, address: 'ar4bfzwH4726kamvTg2wRNLkw16MR6DbbZMyuShYgKs58SknoAF8q7PBQ1XXAsGgH9feTWKKmYZNjaWphc7Wce1u33iKe2cL9', is_background_mining_enabled: true, speed: 2, status: 'OK', threads_count: 1}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherOutPeers">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherOutPeers">
+      <span class="type-signature">(async, inner) </span>.otherOutPeers<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Limit number of outgoing peers.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>out_peers</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>Max number of outgoing peers.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line852">line 852</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherOutPeers-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherOutPeers-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK' }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherSaveBc">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherSaveBc">
+      <span class="type-signature">(async, inner) </span>.otherSaveBc<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Save the blockchain. The blockchain does not need saving and is always saved when modified, however it does a sync to flush the filesystem cache onto the disk for safety purposes against Operating System or Hardware crashes.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line881">line 881</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherSaveBc-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherSaveBc-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK' }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherSendRawTransaction">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherSendRawTransaction">
+      <span class="type-signature">(async, inner) </span>.otherSendRawTransaction<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Broadcast a raw transaction to the network.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>tx_as_hex</code>
+               <em>(
+    <span class="param-type">
+      string
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>Full transaction information as hexidecimal string.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>do_not_relay</code>
+               <em>(
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>(false by default). Stop relaying transaction to other nodes.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line907">line 907</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherSendRawTransaction-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherSendRawTransaction-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ double_spend: false, fee_too_low: false, invalid_input: false, invalid_output: false, low_mixin: false, not_rct: false, not_relayed: true, overspend: false, reason: 'Not relayed', status: 'OK', too_big: false, untrusted: false}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherSetLimit">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherSetLimit">
+      <span class="type-signature">(async, inner) </span>.otherSetLimit<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Set daemon bandwidth limits.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>limit_down</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>Download limit in kBytes per second (-1 reset to default, 0 don't change the current limit).</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>limit_up</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>Upload limit in kBytes per second (-1 reset to default, 0 don't change the current limit).</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line928">line 928</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherSetLimit-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherSetLimit-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ limit_down: 16384, limit_up: 4096, status: 'OK'}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherSetLogCategories">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherSetLogCategories">
+      <span class="type-signature">(async, inner) </span>.otherSetLogCategories<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Set the daemon log categories.<br>
+Categories are represented as a comma separated list of &lt;Category&gt;:&lt;level&gt; (similarly to syslog standard &lt;Facility&gt;:&lt;Severity-level&gt;), where:</p>
+<p><ul>
+Category is one of the following:
+  <li>\* - All facilities</li>
+  <li>default</li>
+  <li>net</li>
+  <li>net.http</li>
+  <li>net.p2p</li>
+  <li>logging</li>
+  <li>net.throttle</li>
+  <li>blockchain.db</li>
+  <li>blockchain.db.lmdb</li>
+  <li>bcutil</li>
+  <li>checkpoints</li>
+  <li>net.dns</li>
+  <li>net.dl</li>
+  <li>i18n</li>
+  <li>perf</li>
+  <li>stacktrace</li>
+  <li>updates</li>
+  <li>account</li>
+  <li>cn</li>
+  <li>difficulty</li>
+  <li>hardfork</li>
+  <li>miner</li>
+  <li>blockchain</li>
+  <li>txpool</li>
+  <li>cn.block_queue</li>
+  <li>net.cn</li>
+  <li>daemon</li>
+  <li>debugtools.deserialize</li>
+  <li>debugtools.objectsizes</li>
+  <li>device.ledger</li>
+  <li>wallet.gen_multisig</li>
+  <li>multisig</li>
+  <li>bulletproofs</li>
+  <li>ringct</li>
+  <li>daemon.rpc</li>
+  <li>wallet.simplewallet</li>
+  <li>WalletAPI</li>
+  <li>wallet.ringdb</li>
+  <li>wallet.wallet2</li>
+  <li>wallet.rpc</li>
+  <li>tests.core
+  </ul>
+<ul>
+Level is one of the following:
+  <li>FATAL - higher level</li>
+  <li>ERROR</li>
+  <li>WARNING</li>
+  <li>INFO</li>
+  <li>DEBUG</li>
+  <li>TRACE - lower level A level automatically includes higher level.</li>
+  </ul></p>
+  By default, categories are set to *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO.<br>
+  Setting the categories to "" prevent any logs to be outputed.
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>categories</code>
+               <em>(
+    <span class="param-type">
+      string
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>Daemon log categories to enable.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line1004">line 1004</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherSetLogCategories-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherSetLogCategories-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ "categories": "*:INFO", "status": "OK"}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherSetLogHashrate">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherSetLogHashrate">
+      <span class="type-signature">(async, inner) </span>.otherSetLogHashrate<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Set the log hash rate display mode.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>visible</code>
+               <em>(
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>States if hash rate logs should be visible (true) or hidden (false)</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line1022">line 1022</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherSetLogHashrate-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherSetLogHashrate-examples">Examples</h5>
+    
+  <p class="code-caption">
+    <b>Output while mining</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ "status": "OK" }</code></pre>
+
+  <p class="code-caption">
+    <b>Output while NOT mining. You need to catch it with promise.</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>Error: NOT MININGat _request.then (C:\myDev\scala-rpc-js\src\rpcDaemon.js:1418:27)at process._tickCallback (internal/process/next_tick.js:68:7)</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherSetLogLevel">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherSetLogLevel">
+      <span class="type-signature">(async, inner) </span>.otherSetLogLevel<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Set the daemon log level. By default, log level is set to 0.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>level</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>Daemon log level to set from 0 (less verbose) to 4 (most verbose).</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line1036">line 1036</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherSetLogLevel-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherSetLogLevel-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ "status": "OK" }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherStartMining">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherStartMining">
+      <span class="type-signature">(async, inner) </span>.otherStartMining<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Start mining on the daemon.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>do_background_mining</code>
+               <em>(
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>States if the mining should run in background (true) or foreground (false).</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>ignore_battery</code>
+               <em>(
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>States if batery state (on laptop) should be ignored (true) or not (false).</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>miner_address</code>
+               <em>(
+    <span class="param-type">
+      string
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>Account address to mine to.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>threads_count</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>Number of mining thread to run.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line1053">line 1053</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherStartMining-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherStartMining-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK' }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherStopDaemon">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherStopDaemon">
+      <span class="type-signature">(async, inner) </span>.otherStopDaemon<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Send a command to the daemon to safely disconnect and shut down.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line1070">line 1070</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherStopDaemon-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherStopDaemon-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ "status": "OK" }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~otherStopMining">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~otherStopMining">
+      <span class="type-signature">(async, inner) </span>.otherStopMining<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Stop mining on the daemon.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line1080">line 1080</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#otherStopMining-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="otherStopMining-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK' }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~relayTx">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~relayTx">
+      <span class="type-signature">(async, inner) </span>.relayTx<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Relay a list of transaction IDs.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>txids</code>
+               <em>(
+    <span class="param-type">
+      Array.&lt;string>
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>list of transaction IDs to relay.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line1092">line 1092</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#relayTx-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="relayTx-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK' }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~resetNonces">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~resetNonces">
+      <span class="type-signature">(inner) </span>.resetNonces<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Convenience Digest function to reset nc to '00000001' and generate a new cnonce</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line63">line 63</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~setBans">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~setBans">
+      <span class="type-signature">(async, inner) </span>.setBans<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Ban another node by IP.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>bans</code>
+               <em>(
+    <span class="param-type">
+      Array
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>host</code>
+               <em>(
+    <span class="param-type">
+      string
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>Host to ban.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>ip</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+                &lt;optional><br>
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>IP address to ban, in Int format.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>ban</code>
+               <em>(
+    <span class="param-type">
+      boolean
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>Set true to ban.</p>
+
+          
+
+      </div>
+      
+      <div>
+          
+               <code>seconds</code>
+               <em>(
+    <span class="param-type">
+      number
+    </span>
+
+    
+)</em>
+          
+
+          
+            <span class="attributes">
+              
+
+              
+
+              
+            </span>
+          
+
+          <p>Number of seconds to ban node.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line1110">line 1110</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#setBans-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="setBans-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ status: 'OK' }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~sslRejectUnauthorized">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~sslRejectUnauthorized">
+      <span class="type-signature">(inner) </span>.sslRejectUnauthorized<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>If not false, the server certificate is verified against the list of supplied CAs.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line69">line 69</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~submitBlock">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~submitBlock">
+      <span class="type-signature">(async, inner) </span>.submitBlock<span class="signature">(opts)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Look up a block's hash by its height.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<div class="params">
+     
+      <div>
+          
+               <code>opts</code>
+               <em>(
+    <span class="param-type">
+      Object
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          
+
+          
+            <div class="sub-params">
+              <h6>Properties</h6>
+              
+
+<div class="params">
+     
+      <div>
+          
+               <code>blobs</code>
+               <em>(
+    <span class="param-type">
+      Array.&lt;string>
+    </span>
+
+    
+)</em>
+          
+
+          
+
+          <p>list of block blobs which have been mined.</p>
+
+          
+
+      </div>
+      
+</div>
+
+            </div>
+          
+
+      </div>
+      
+</div>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line1125">line 1125</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#submitBlock-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="submitBlock-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output with error message when the block is not accepted. You need to catch it with promise.</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ Error: Block not accepted  at _request.then (C:\myDev\scala-rpc-js\src\rpcDaemon.js:761:25)  at process._tickCallback (internal/process/next_tick.js:68:7) code: -7 }</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~syncInfo">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~syncInfo">
+      <span class="type-signature">(async, inner) </span>.syncInfo<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Get synchronisation informations.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line1150">line 1150</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#syncInfo-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="syncInfo-examples">Example</h5>
+    
+  <p class="code-caption">
+    <b>Output</b>
+  </p>
+
+
+  <pre class="prettyprint"><code>{ height: 149027, next_needed_pruning_seed: 0, overview: '[]', peers: [  { info: [Object] },  { info: [Object] },  ... ,  { info: [Object] } ], status: 'OK', target_height: 149009}</code></pre>
+
+
+  </div>
+
+
+      
+    
+
+    
+      <h3 class="subsection-title">Type Definitions</h3>
+
+      
+          
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~rpcDaemon">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~rpcDaemon">
+      <span class="type-signature"></span>.rpcDaemon<span class="type-signature"> :Object</span>
+    </h4>
+  </span>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="rpcDaemon.js.html">rpcDaemon.js</a>, <a href="rpcDaemon.js.html#line35">line 35</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+  </article>
+</section>
+
+
+
+
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+  </footer>
+
+    
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+  <script src="scripts/scrollbar.js"></script>
+  <script src="scripts/collapsible.js"></script>
+  <script src="scripts/jquery.selectric.min.js"></script>
+  <script src="scripts/clipboard.min.js"></script>
+
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script>
+      $(function () {
+          $('#menu-container').scrollbar();
+
+          
+      });
+    </script>
+</body>
+</html>

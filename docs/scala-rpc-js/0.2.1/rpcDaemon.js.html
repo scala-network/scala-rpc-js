@@ -1,0 +1,1313 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      Scala Javascript RPC Library - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link id="google-font" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Cutive+Mono|Roboto:300,400,700" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="styles/highlight-themes/current.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  <link type="text/css" rel="stylesheet" href="styles/collapsible.css">
+  <link type="text/css" rel="stylesheet" href="styles/style-switcher.css">
+  <link type="text/css" rel="stylesheet" href="styles/selectric.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://embed.runkit.com"></script>
+  <style id="style-switcher-styles">
+    nav {
+        background: #282c34;
+    }
+    .hljs {
+        background: #1d2027;
+    }
+    .nav-container > ul > li.active a {
+        color: #BAB87E;
+    }
+    .nav-container > ul > li.active a:hover {
+        color: #8F8D61;
+    }
+    .nav-container > ul > li.active ul {
+        border-color: #8F8D61;
+    }
+    h4.name {
+        color: #8F8D61;
+    }
+    .params > div > code, .params > div > em {
+        color: #8F8D61;
+    }
+    a, a:active {
+        color: #8F8D61;
+    }
+    .hljs-doctag, .hljs-keyword, .hljs-formula {
+        color: #8F8D61;
+    }
+    nav ul a:hover, nav ul a:active {
+        color: #8F8D61;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header-fixed">
+      <h1>
+        <a href="index.html" title="modernTemplate.title">
+            
+            Scala RPC JS
+        </a>
+      </h1>
+      <div class="center-header">
+          <ul>
+            
+          </ul>
+      </div>
+      <div class="right-header">
+           
+                <a href="https://github.com/scala-network/scala-rpc-js" title="View it on Github" style="">
+                    <i class="fab fa-github-alt"></i>
+                </a>
+           
+                <a href="https://www.npmjs.com/package/scala-rpc-js" title="View it on NPM" style="font-size: 19px">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </a>
+           
+      </div>
+  </header>
+
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <nav>
+    <div id="menu-container" class="scrollbar-inner">
+        <div class="nav-container">
+            <h3>Modules</h3><ul><li id="RPCDaemon-nav"><a href="module-RPCDaemon.html">RPCDaemon</a><ul class='methods'><li data-type="method" id="RPCDaemon-createDaemonClient-nav"><a href="module-RPCDaemon.html#.createDaemonClient">createDaemonClient</a></li><li data-type="method" id="RPCDaemon-flushTxPool-nav"><a href="module-RPCDaemon.html#~flushTxPool">flushTxPool</a></li><li data-type="method" id="RPCDaemon-getAlternateChains-nav"><a href="module-RPCDaemon.html#~getAlternateChains">getAlternateChains</a></li><li data-type="method" id="RPCDaemon-getBans-nav"><a href="module-RPCDaemon.html#~getBans">getBans</a></li><li data-type="method" id="RPCDaemon-getBlock-nav"><a href="module-RPCDaemon.html#~getBlock">getBlock</a></li><li data-type="method" id="RPCDaemon-getBlockCount-nav"><a href="module-RPCDaemon.html#~getBlockCount">getBlockCount</a></li><li data-type="method" id="RPCDaemon-getBlockHash-nav"><a href="module-RPCDaemon.html#~getBlockHash">getBlockHash</a></li><li data-type="method" id="RPCDaemon-getBlockHeaderByHash-nav"><a href="module-RPCDaemon.html#~getBlockHeaderByHash">getBlockHeaderByHash</a></li><li data-type="method" id="RPCDaemon-getBlockHeaderByHeight-nav"><a href="module-RPCDaemon.html#~getBlockHeaderByHeight">getBlockHeaderByHeight</a></li><li data-type="method" id="RPCDaemon-getBlockHeadersRange-nav"><a href="module-RPCDaemon.html#~getBlockHeadersRange">getBlockHeadersRange</a></li><li data-type="method" id="RPCDaemon-getBlocksRange-nav"><a href="module-RPCDaemon.html#~getBlocksRange">getBlocksRange</a></li><li data-type="method" id="RPCDaemon-getBlockTemplate-nav"><a href="module-RPCDaemon.html#~getBlockTemplate">getBlockTemplate</a></li><li data-type="method" id="RPCDaemon-getCoinbaseTxSum-nav"><a href="module-RPCDaemon.html#~getCoinbaseTxSum">getCoinbaseTxSum</a></li><li data-type="method" id="RPCDaemon-getConnections-nav"><a href="module-RPCDaemon.html#~getConnections">getConnections</a></li><li data-type="method" id="RPCDaemon-getFeeEstimate-nav"><a href="module-RPCDaemon.html#~getFeeEstimate">getFeeEstimate</a></li><li data-type="method" id="RPCDaemon-getHardForkInfo-nav"><a href="module-RPCDaemon.html#~getHardForkInfo">getHardForkInfo</a></li><li data-type="method" id="RPCDaemon-getInfo-nav"><a href="module-RPCDaemon.html#~getInfo">getInfo</a></li><li data-type="method" id="RPCDaemon-getLastBlockHeader-nav"><a href="module-RPCDaemon.html#~getLastBlockHeader">getLastBlockHeader</a></li><li data-type="method" id="RPCDaemon-getOutputDistribution-nav"><a href="module-RPCDaemon.html#~getOutputDistribution">getOutputDistribution</a></li><li data-type="method" id="RPCDaemon-getOutputHistogram-nav"><a href="module-RPCDaemon.html#~getOutputHistogram">getOutputHistogram</a></li><li data-type="method" id="RPCDaemon-getVersion-nav"><a href="module-RPCDaemon.html#~getVersion">getVersion</a></li><li data-type="method" id="RPCDaemon-otherGetAltBlocksHashes-nav"><a href="module-RPCDaemon.html#~otherGetAltBlocksHashes">otherGetAltBlocksHashes</a></li><li data-type="method" id="RPCDaemon-otherGetHeight-nav"><a href="module-RPCDaemon.html#~otherGetHeight">otherGetHeight</a></li><li data-type="method" id="RPCDaemon-otherGetLimit-nav"><a href="module-RPCDaemon.html#~otherGetLimit">otherGetLimit</a></li><li data-type="method" id="RPCDaemon-otherGetPeerList-nav"><a href="module-RPCDaemon.html#~otherGetPeerList">otherGetPeerList</a></li><li data-type="method" id="RPCDaemon-otherGetTransactionPool-nav"><a href="module-RPCDaemon.html#~otherGetTransactionPool">otherGetTransactionPool</a></li><li data-type="method" id="RPCDaemon-otherGetTransactionPoolStats-nav"><a href="module-RPCDaemon.html#~otherGetTransactionPoolStats">otherGetTransactionPoolStats</a></li><li data-type="method" id="RPCDaemon-otherGetTransactions-nav"><a href="module-RPCDaemon.html#~otherGetTransactions">otherGetTransactions</a></li><li data-type="method" id="RPCDaemon-otherInPeers-nav"><a href="module-RPCDaemon.html#~otherInPeers">otherInPeers</a></li><li data-type="method" id="RPCDaemon-otherIsKeyImageSpent-nav"><a href="module-RPCDaemon.html#~otherIsKeyImageSpent">otherIsKeyImageSpent</a></li><li data-type="method" id="RPCDaemon-otherMiningStatus-nav"><a href="module-RPCDaemon.html#~otherMiningStatus">otherMiningStatus</a></li><li data-type="method" id="RPCDaemon-otherOutPeers-nav"><a href="module-RPCDaemon.html#~otherOutPeers">otherOutPeers</a></li><li data-type="method" id="RPCDaemon-otherSaveBc-nav"><a href="module-RPCDaemon.html#~otherSaveBc">otherSaveBc</a></li><li data-type="method" id="RPCDaemon-otherSendRawTransaction-nav"><a href="module-RPCDaemon.html#~otherSendRawTransaction">otherSendRawTransaction</a></li><li data-type="method" id="RPCDaemon-otherSetLimit-nav"><a href="module-RPCDaemon.html#~otherSetLimit">otherSetLimit</a></li><li data-type="method" id="RPCDaemon-otherSetLogCategories-nav"><a href="module-RPCDaemon.html#~otherSetLogCategories">otherSetLogCategories</a></li><li data-type="method" id="RPCDaemon-otherSetLogHashrate-nav"><a href="module-RPCDaemon.html#~otherSetLogHashrate">otherSetLogHashrate</a></li><li data-type="method" id="RPCDaemon-otherSetLogLevel-nav"><a href="module-RPCDaemon.html#~otherSetLogLevel">otherSetLogLevel</a></li><li data-type="method" id="RPCDaemon-otherStartMining-nav"><a href="module-RPCDaemon.html#~otherStartMining">otherStartMining</a></li><li data-type="method" id="RPCDaemon-otherStopDaemon-nav"><a href="module-RPCDaemon.html#~otherStopDaemon">otherStopDaemon</a></li><li data-type="method" id="RPCDaemon-otherStopMining-nav"><a href="module-RPCDaemon.html#~otherStopMining">otherStopMining</a></li><li data-type="method" id="RPCDaemon-relayTx-nav"><a href="module-RPCDaemon.html#~relayTx">relayTx</a></li><li data-type="method" id="RPCDaemon-resetNonces-nav"><a href="module-RPCDaemon.html#~resetNonces">resetNonces</a></li><li data-type="method" id="RPCDaemon-setBans-nav"><a href="module-RPCDaemon.html#~setBans">setBans</a></li><li data-type="method" id="RPCDaemon-sslRejectUnauthorized-nav"><a href="module-RPCDaemon.html#~sslRejectUnauthorized">sslRejectUnauthorized</a></li><li data-type="method" id="RPCDaemon-submitBlock-nav"><a href="module-RPCDaemon.html#~submitBlock">submitBlock</a></li><li data-type="method" id="RPCDaemon-syncInfo-nav"><a href="module-RPCDaemon.html#~syncInfo">syncInfo</a></li></ul></li><li id="RPCWallet-nav"><a href="module-RPCWallet.html">RPCWallet</a><ul class='methods'><li data-type="method" id="RPCWallet-createWalletClient-nav"><a href="module-RPCWallet.html#.createWalletClient">createWalletClient</a></li><li data-type="method" id="RPCWallet-addAddressBook-nav"><a href="module-RPCWallet.html#~addAddressBook">addAddressBook</a></li><li data-type="method" id="RPCWallet-autoRefresh-nav"><a href="module-RPCWallet.html#~autoRefresh">autoRefresh</a></li><li data-type="method" id="RPCWallet-changeWalletPassword-nav"><a href="module-RPCWallet.html#~changeWalletPassword">changeWalletPassword</a></li><li data-type="method" id="RPCWallet-checkReserveProof-nav"><a href="module-RPCWallet.html#~checkReserveProof">checkReserveProof</a></li><li data-type="method" id="RPCWallet-checkSpendProof-nav"><a href="module-RPCWallet.html#~checkSpendProof">checkSpendProof</a></li><li data-type="method" id="RPCWallet-checkTxKey-nav"><a href="module-RPCWallet.html#~checkTxKey">checkTxKey</a></li><li data-type="method" id="RPCWallet-checkTxProof-nav"><a href="module-RPCWallet.html#~checkTxProof">checkTxProof</a></li><li data-type="method" id="RPCWallet-closeWallet-nav"><a href="module-RPCWallet.html#~closeWallet">closeWallet</a></li><li data-type="method" id="RPCWallet-createAccount-nav"><a href="module-RPCWallet.html#~createAccount">createAccount</a></li><li data-type="method" id="RPCWallet-createAddress-nav"><a href="module-RPCWallet.html#~createAddress">createAddress</a></li><li data-type="method" id="RPCWallet-createWallet-nav"><a href="module-RPCWallet.html#~createWallet">createWallet</a></li><li data-type="method" id="RPCWallet-deleteAddressBook-nav"><a href="module-RPCWallet.html#~deleteAddressBook">deleteAddressBook</a></li><li data-type="method" id="RPCWallet-exportKeyImages-nav"><a href="module-RPCWallet.html#~exportKeyImages">exportKeyImages</a></li><li data-type="method" id="RPCWallet-exportMultisigInfo-nav"><a href="module-RPCWallet.html#~exportMultisigInfo">exportMultisigInfo</a></li><li data-type="method" id="RPCWallet-exportOutputs-nav"><a href="module-RPCWallet.html#~exportOutputs">exportOutputs</a></li><li data-type="method" id="RPCWallet-finalizeMultisig-nav"><a href="module-RPCWallet.html#~finalizeMultisig">finalizeMultisig</a></li><li data-type="method" id="RPCWallet-generateFromKeys-nav"><a href="module-RPCWallet.html#~generateFromKeys">generateFromKeys</a></li><li data-type="method" id="RPCWallet-getAccounts-nav"><a href="module-RPCWallet.html#~getAccounts">getAccounts</a></li><li data-type="method" id="RPCWallet-getAccountTags-nav"><a href="module-RPCWallet.html#~getAccountTags">getAccountTags</a></li><li data-type="method" id="RPCWallet-getAddress-nav"><a href="module-RPCWallet.html#~getAddress">getAddress</a></li><li data-type="method" id="RPCWallet-getAddressBook-nav"><a href="module-RPCWallet.html#~getAddressBook">getAddressBook</a></li><li data-type="method" id="RPCWallet-getAddressIndex-nav"><a href="module-RPCWallet.html#~getAddressIndex">getAddressIndex</a></li><li data-type="method" id="RPCWallet-getAttribute-nav"><a href="module-RPCWallet.html#~getAttribute">getAttribute</a></li><li data-type="method" id="RPCWallet-getBalance-nav"><a href="module-RPCWallet.html#~getBalance">getBalance</a></li><li data-type="method" id="RPCWallet-getBulkPayments-nav"><a href="module-RPCWallet.html#~getBulkPayments">getBulkPayments</a></li><li data-type="method" id="RPCWallet-getHeight-nav"><a href="module-RPCWallet.html#~getHeight">getHeight</a></li><li data-type="method" id="RPCWallet-getLanguages-nav"><a href="module-RPCWallet.html#~getLanguages">getLanguages</a></li><li data-type="method" id="RPCWallet-getPayments-nav"><a href="module-RPCWallet.html#~getPayments">getPayments</a></li><li data-type="method" id="RPCWallet-getReserveProof-nav"><a href="module-RPCWallet.html#~getReserveProof">getReserveProof</a></li><li data-type="method" id="RPCWallet-getSpendProof-nav"><a href="module-RPCWallet.html#~getSpendProof">getSpendProof</a></li><li data-type="method" id="RPCWallet-getTransferByTxId-nav"><a href="module-RPCWallet.html#~getTransferByTxId">getTransferByTxId</a></li><li data-type="method" id="RPCWallet-getTransfers-nav"><a href="module-RPCWallet.html#~getTransfers">getTransfers</a></li><li data-type="method" id="RPCWallet-getTxKey-nav"><a href="module-RPCWallet.html#~getTxKey">getTxKey</a></li><li data-type="method" id="RPCWallet-getTxNotes-nav"><a href="module-RPCWallet.html#~getTxNotes">getTxNotes</a></li><li data-type="method" id="RPCWallet-getTxProof-nav"><a href="module-RPCWallet.html#~getTxProof">getTxProof</a></li><li data-type="method" id="RPCWallet-getVersion-nav"><a href="module-RPCWallet.html#~getVersion">getVersion</a></li><li data-type="method" id="RPCWallet-importKeyImages-nav"><a href="module-RPCWallet.html#~importKeyImages">importKeyImages</a></li><li data-type="method" id="RPCWallet-importMultisigInfo-nav"><a href="module-RPCWallet.html#~importMultisigInfo">importMultisigInfo</a></li><li data-type="method" id="RPCWallet-importOutputs-nav"><a href="module-RPCWallet.html#~importOutputs">importOutputs</a></li><li data-type="method" id="RPCWallet-incomingTransfers-nav"><a href="module-RPCWallet.html#~incomingTransfers">incomingTransfers</a></li><li data-type="method" id="RPCWallet-isMultisig-nav"><a href="module-RPCWallet.html#~isMultisig">isMultisig</a></li><li data-type="method" id="RPCWallet-labelAccount-nav"><a href="module-RPCWallet.html#~labelAccount">labelAccount</a></li><li data-type="method" id="RPCWallet-labelAddress-nav"><a href="module-RPCWallet.html#~labelAddress">labelAddress</a></li><li data-type="method" id="RPCWallet-makeIntegratedAddress-nav"><a href="module-RPCWallet.html#~makeIntegratedAddress">makeIntegratedAddress</a></li><li data-type="method" id="RPCWallet-makeMultisig-nav"><a href="module-RPCWallet.html#~makeMultisig">makeMultisig</a></li><li data-type="method" id="RPCWallet-makeUri-nav"><a href="module-RPCWallet.html#~makeUri">makeUri</a></li><li data-type="method" id="RPCWallet-openWallet-nav"><a href="module-RPCWallet.html#~openWallet">openWallet</a></li><li data-type="method" id="RPCWallet-parseUri-nav"><a href="module-RPCWallet.html#~parseUri">parseUri</a></li><li data-type="method" id="RPCWallet-prepareMultisig-nav"><a href="module-RPCWallet.html#~prepareMultisig">prepareMultisig</a></li><li data-type="method" id="RPCWallet-queryKey-nav"><a href="module-RPCWallet.html#~queryKey">queryKey</a></li><li data-type="method" id="RPCWallet-refresh-nav"><a href="module-RPCWallet.html#~refresh">refresh</a></li><li data-type="method" id="RPCWallet-relayTx-nav"><a href="module-RPCWallet.html#~relayTx">relayTx</a></li><li data-type="method" id="RPCWallet-rescanBlockchain-nav"><a href="module-RPCWallet.html#~rescanBlockchain">rescanBlockchain</a></li><li data-type="method" id="RPCWallet-rescanSpent-nav"><a href="module-RPCWallet.html#~rescanSpent">rescanSpent</a></li><li data-type="method" id="RPCWallet-resetNonces-nav"><a href="module-RPCWallet.html#~resetNonces">resetNonces</a></li><li data-type="method" id="RPCWallet-restoreDeterministicWallet-nav"><a href="module-RPCWallet.html#~restoreDeterministicWallet">restoreDeterministicWallet</a></li><li data-type="method" id="RPCWallet-setAccountTagDescription-nav"><a href="module-RPCWallet.html#~setAccountTagDescription">setAccountTagDescription</a></li><li data-type="method" id="RPCWallet-setAttribute-nav"><a href="module-RPCWallet.html#~setAttribute">setAttribute</a></li><li data-type="method" id="RPCWallet-setDaemon-nav"><a href="module-RPCWallet.html#~setDaemon">setDaemon</a></li><li data-type="method" id="RPCWallet-setLogCategories-nav"><a href="module-RPCWallet.html#~setLogCategories">setLogCategories</a></li><li data-type="method" id="RPCWallet-setLogLevel-nav"><a href="module-RPCWallet.html#~setLogLevel">setLogLevel</a></li><li data-type="method" id="RPCWallet-setTxNotes-nav"><a href="module-RPCWallet.html#~setTxNotes">setTxNotes</a></li><li data-type="method" id="RPCWallet-sign-nav"><a href="module-RPCWallet.html#~sign">sign</a></li><li data-type="method" id="RPCWallet-signMultisig-nav"><a href="module-RPCWallet.html#~signMultisig">signMultisig</a></li><li data-type="method" id="RPCWallet-signTransfer-nav"><a href="module-RPCWallet.html#~signTransfer">signTransfer</a></li><li data-type="method" id="RPCWallet-splitIntegratedAddress-nav"><a href="module-RPCWallet.html#~splitIntegratedAddress">splitIntegratedAddress</a></li><li data-type="method" id="RPCWallet-sslRejectUnauthorized-nav"><a href="module-RPCWallet.html#~sslRejectUnauthorized">sslRejectUnauthorized</a></li><li data-type="method" id="RPCWallet-startMining-nav"><a href="module-RPCWallet.html#~startMining">startMining</a></li><li data-type="method" id="RPCWallet-stopMining-nav"><a href="module-RPCWallet.html#~stopMining">stopMining</a></li><li data-type="method" id="RPCWallet-stopWallet-nav"><a href="module-RPCWallet.html#~stopWallet">stopWallet</a></li><li data-type="method" id="RPCWallet-store-nav"><a href="module-RPCWallet.html#~store">store</a></li><li data-type="method" id="RPCWallet-submitMultisig-nav"><a href="module-RPCWallet.html#~submitMultisig">submitMultisig</a></li><li data-type="method" id="RPCWallet-submitTransfer-nav"><a href="module-RPCWallet.html#~submitTransfer">submitTransfer</a></li><li data-type="method" id="RPCWallet-sweepAll-nav"><a href="module-RPCWallet.html#~sweepAll">sweepAll</a></li><li data-type="method" id="RPCWallet-sweepDust-nav"><a href="module-RPCWallet.html#~sweepDust">sweepDust</a></li><li data-type="method" id="RPCWallet-sweepSingle-nav"><a href="module-RPCWallet.html#~sweepSingle">sweepSingle</a></li><li data-type="method" id="RPCWallet-tagAccounts-nav"><a href="module-RPCWallet.html#~tagAccounts">tagAccounts</a></li><li data-type="method" id="RPCWallet-transfer-nav"><a href="module-RPCWallet.html#~transfer">transfer</a></li><li data-type="method" id="RPCWallet-transferSplit-nav"><a href="module-RPCWallet.html#~transferSplit">transferSplit</a></li><li data-type="method" id="RPCWallet-untagAccounts-nav"><a href="module-RPCWallet.html#~untagAccounts">untagAccounts</a></li><li data-type="method" id="RPCWallet-validateAddress-nav"><a href="module-RPCWallet.html#~validateAddress">validateAddress</a></li><li data-type="method" id="RPCWallet-verify-nav"><a href="module-RPCWallet.html#~verify">verify</a></li></ul></li></ul>
+        </div>
+    </div>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        rpcDaemon.js
+      </h1>
+    
+
+    
+      
+
+<section>
+  <article>
+    <pre class="prettyprint source linenums"><code>'use strict'
+
+const http = require('./httpClient')
+const { default: PQueue } = require('p-queue')
+const rpcHelpers = require('./rpcHelpers')
+
+function parseDaemonResponse (res) {
+  if (res.status === 200) {
+    var json
+    if ('result' in res.data) {
+      json = res.data.result
+    } else {
+      json = res.data
+    }
+    if (json.status === 'OK') {
+      return json
+    } else {
+      const error = new Error('RPC Error!')
+      error.code = json.error.code
+      error.message = json.error.message
+      throw error
+    }
+  } else {
+    const error = new Error('HTTP Error!')
+    error.code = res.status
+    error.message = res.data
+    throw error
+  }
+}
+
+/**
+ * @module RPCDaemon
+ */
+/** @typedef {{ RPCDaemon}} */
+var rpcDaemon = {}
+
+/**
+* Factory that creates a RPCDaemon client object.
+* @function module:RPCDaemon.createDaemonClient
+* @param {Object} opts
+* @param {string} opts.url - complete url with port 'http://127.0.0.1:20000' or 'https://127.0.0.1:20000'.
+* @param {string} [opts.username='Mufasa'] - username.
+* @param {string} [opts.password='Circle of Life'] - password.
+* @return {RPCDaemon} returns a new instance of RPCDaemon.
+*/
+rpcDaemon.createDaemonClient = function (config) {
+  /**
+ * @async
+ * @param {Object} opts
+ * @param {string} opts.url - complete url with port 'http://127.0.0.1:19994' or 'https://127.0.0.1:19994'.
+ * @param {string} [opts.username='Mufasa'] - username.
+ * @param {string} [opts.password='Circle of Life'] - password.
+ * @return {RPCDaemon} returns a new instance of RPCDaemon.
+ */
+  const queue = new PQueue({ concurrency: 1 })
+  const httpClient = http.createHttpClient(config)
+  const jsonAddress = config.url + '/json_rpc'
+  httpClient.defaults.headers.post['Content-Type'] = 'application/json'
+  return {
+    /**
+    *  Convenience Digest function to reset nc to '00000001' and generate a new cnonce
+    */
+    resetNonces: function () {
+      return httpClient.resetNonces()
+    },
+    /**
+    *  If not false, the server certificate is verified against the list of supplied CAs.
+    */
+    sslRejectUnauthorized: function (value) {
+      httpClient.defaults.httpAgent.options.rejectUnauthorized = value
+      httpClient.defaults.httpsAgent.options.rejectUnauthorized = value
+      return value
+    },
+    /**
+   * Flush tx ids from transaction pool.
+   * @async
+   * @param {Object} [opts]
+   * @param {string[]} [opts.txids] - list of transactions IDs to flush from pool (all tx ids flushed if empty).
+   * @returns {Promise&lt;object>} Promise object.
+   * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+   * { status: 'OK' }
+   */
+    flushTxPool: async function (opts) {
+      rpcHelpers.checkOptionalParametersType({ txids: 'ArrayOfHashes' }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'flush_txpool', opts)
+    },
+    /**
+    * Display alternative chains seen by the node.
+    * @async
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { status: 'OK' }
+    */
+    getAlternateChains: async function () {
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_alternate_chains')
+    },
+    /**
+    * Get list of banned IPs.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  bans:
+    *  [
+    *   { host: '192.168.1.50', ip: 838969536, seconds: 30 },
+    *   { host: '192.168.1.51', ip: 855746752, seconds: 30 }
+    *  ],
+    *  status: 'OK'
+    * }
+    */
+    getBans: async function () {
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_bans')
+    },
+    /**
+    * Full block information can be retrieved by either block height or hash.
+    * @async
+    * @param {Object} opts
+    * @param {number} [opts.height] -  The block's height.
+    * @param {string} [opts.hash] -  The block's hash.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  blob: '0a0ab294a0e305be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e
+    *         743b62008002a6fc0601ff94fc0601a5a7a3bf4702f0f7be480164ced3d5d28c49dd9baeb5ab2bd3
+    *         29910838afd3e26cd85ad49b3e6101311398a1783551ba88c64c00135d0439d982fc4d70f48e1dff
+    *         cca8146454e84303210091abcad5e3b8bc208e5361ffeebbb68a35e102a5225f4865e3503cf7e76a
+    *         ff92021b000000000000000000000000005602009e000000000000000000000000',
+    *  block_header:
+    *  {
+    *   block_size: 147,
+    *   cumulative_difficulty: 16146009479722,
+    *   depth: 31535,
+    *   difficulty: 109000131,
+    *   hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',
+    *   height: 114196,
+    *   major_version: 10,
+    *   minor_version: 10,
+    *   nonce: 2147508795,
+    *   num_txes: 0,
+    *   orphan_status: false,
+    *   pow_hash: '',
+    *   prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',
+    *   reward: 19191616421,
+    *   timestamp: 1550322226
+    *  },
+    *  json: '{\n  "major_version": 10, \n  "minor_version": 10, \n  "timestamp": 15503222
+    *  26, \n  "prev_id": "be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf2
+    *  4e74", \n  "nonce": 2147508795, \n  "miner_tx": {\n    "version": 2, \n    "unlo
+    *  ck_time": 114214, \n    "vin": [ {\n        "gen": {\n          "height": 114196
+    *  \n        }\n      }\n    ], \n    "vout": [ {\n        "amount": 19191616421, \
+    *  n        "target": {\n          "key": "f0f7be480164ced3d5d28c49dd9baeb5ab2bd329
+    *  910838afd3e26cd85ad49b3e"\n        }\n      }\n    ], \n    "extra": [ 1, 49, 19
+    *  , 152, 161, 120, 53, 81, 186, 136, 198, 76, 0, 19, 93, 4, 57, 217, 130, 252, 77,
+    *  112, 244, 142, 29, 255, 204, 168, 20, 100, 84, 232, 67, 3, 33, 0, 145, 171, 202
+    *  , 213, 227, 184, 188, 32, 142, 83, 97, 255, 238, 187, 182, 138, 53, 225, 2, 165,
+    *  34, 95, 72, 101, 227, 80, 60, 247, 231, 106, 255, 146, 2, 27, 0, 0, 0, 0, 0, 0,
+    *  0, 0, 0, 0, 0, 0, 0, 86, 2, 0, 158, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\n    ], \n
+    *  "rct_signatures": {\n      "type": 0\n    }\n  }, \n  "tx_hashes": [ ]\n}',
+    *  miner_tx_hash: '691e09ce198a2953c391a292ed79d7a239ec929740503400a0ab3e3ee8cfad84',
+    *  status: 'OK',
+    *  untrusted: false
+    * }
+    */
+    getBlock: async function (opts) {
+      if ((typeof opts.height === 'undefined') &amp;&amp; (typeof opts.hash === 'undefined')) {
+        throw new Error('must specify height or hash')
+      } else {
+        rpcHelpers.checkOptionalParametersType({
+          height: 'Integer',
+          hash: 'Hash'
+        }, opts)
+      }
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_block', opts)
+    },
+    /**
+    * Look up how many blocks are in the longest chain known to the node.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  count: 144188,
+    *  status: 'OK'
+    * }
+    */
+    getBlockCount: async function () {
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'getblockcount')
+    },
+    /**
+    * Look up a block's hash by its height.
+    * @async
+    * @param {Object} opts
+    * @param {number} opts.height - block height.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * 6115a8e9902af15d31d14c698621d54e9bb594b0da053591ec5d1ceb537960ea
+    */
+    getBlockHash: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ height: 'Integer' }, opts)
+      const res = await httpClient.post(jsonAddress, `{"jsonrpc":"2.0","id":"0","method":"on_get_block_hash","params":${JSON.stringify([opts.height])}}`)
+      if (res.status === 200) {
+        if ('result' in res.data) {
+          return res.data.result
+        } else {
+          const error = new Error('RPC Error!')
+          error.code = res.data.error.code
+          error.message = res.data.error.message
+          throw error
+        }
+      } else {
+        const error = new Error('HTTP Error!')
+        error.code = res.status
+        error.message = res.data
+        throw error
+      }
+    },
+    /**
+    * Block header information can be retrieved using hash.
+    * @async
+    * @param {Object} opts
+    * @param {string} opts.hash - The block's sha256 hash.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  block_header:
+    *  {
+    *   block_size: 147,
+    *   cumulative_difficulty: 16146009479722,
+    *   depth: 30823,
+    *   difficulty: 109000131,
+    *   hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',
+    *   height: 114196,
+    *   major_version: 10,
+    *   minor_version: 10,
+    *   nonce: 2147508795,
+    *   num_txes: 0,
+    *   orphan_status: false,
+    *   pow_hash: '',
+    *   prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',
+    *   reward: 19191616421,
+    *   timestamp: 1550322226
+    *  },
+    *  status: 'OK',
+    *  untrusted: false
+    * }
+    */
+    getBlockHeaderByHash: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ hash: 'Hash' }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_block_header_by_hash', opts)
+    },
+    /**
+    * Block header information can be retrieved using height.
+    * @async
+    * @param {Object} opts
+    * @param {number} opts.height - The block's height.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  block_header:
+    *  {
+    *   block_size: 147,
+    *   cumulative_difficulty: 16146009479722,
+    *   depth: 30823,
+    *   difficulty: 109000131,
+    *   hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',
+    *   height: 114196,
+    *   major_version: 10,
+    *   minor_version: 10,
+    *   nonce: 2147508795,
+    *   num_txes: 0,
+    *   orphan_status: false,
+    *   pow_hash: '',
+    *   prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',
+    *   reward: 19191616421,
+    *   timestamp: 1550322226
+    *  },
+    *  status: 'OK',
+    *  untrusted: false
+    * }
+    */
+    getBlockHeaderByHeight: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ height: 'Integer' }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_block_header_by_height', opts)
+    },
+    /**
+    * Similar to get_block_header_by_height above, but for a range of blocks.
+    * This method includes a starting block height and an ending block height as parameters.
+    * @async
+    * @param {Object} opts
+    * @param {number} opts.start_height - The starting block's height.
+    * @param {number} opts.end_height - The ending block's height.
+    * @returns {Promise&lt;object>} Promise object
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  headers:
+    *  [
+    *   {
+    *    block_size: 147,
+    *    cumulative_difficulty: 16146009479722,
+    *    depth: 30831,
+    *    difficulty: 109000131,
+    *    hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',
+    *    height: 114196,
+    *    major_version: 10,
+    *    minor_version: 10,
+    *    nonce: 2147508795,
+    *    num_txes: 0,
+    *    orphan_status: false,
+    *    pow_hash: '',
+    *    prev_hash: 'be9bcd157ff60f9b174217608a5b419c451afa1d9d76c49edf54ac829bf24e74',
+    *    reward: 19191616421,
+    *    timestamp: 1550322226
+    *   },
+    *   {
+    *    block_size: 147,
+    *    cumulative_difficulty: 16146120479856,
+    *    depth: 30830,
+    *    difficulty: 111000134,
+    *    hash: 'c27c128325bb3f47d76816789995d376268ee25f3cdcfb714580e34fe5cc8e08',
+    *    height: 114197,
+    *    major_version: 10,
+    *    minor_version: 10,
+    *    nonce: 541065496,
+    *    num_txes: 0,
+    *    orphan_status: false,
+    *    pow_hash: '',
+    *    prev_hash: '5859dbfca776cc006f6bfd00a41363f8ffcc20e6f217c484df0b47ae8cc2458a',
+    *    reward: 19191607270,
+    *    timestamp: 1550322551
+    *   }
+    *  ],
+    *  status: 'OK',
+    *  untrusted: false
+    * }
+    */
+    getBlockHeadersRange: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({
+        start_height: 'Integer',
+        end_height: 'Integer'
+      }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_block_headers_range', opts)
+    },
+    /**
+    * Return a range of blocks containing the block header and its attached transactions.
+    * The first transaction in block is the coinbase transaction.
+    * This method includes a starting block height and an ending block height as parameters.
+    * @async
+    * @param {Object} opts
+    * @param {number} opts.start_height - The starting block's height.
+    * @param {number} opts.end_height - The ending block's height.
+    * @returns {Promise&lt;object>} Promise object
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { blocks:
+    *  [
+    *   { block_header: [Object], txs: [Array] },
+    *   { block_header: [Object], txs: [Array] }
+    *  ],
+    *  status: 'OK',
+    *  untrusted: false
+    * }
+    */
+    getBlocksRange: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({
+        start_height: 'Integer',
+        end_height: 'Integer'
+      }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_blocks_range', opts)
+    },
+    /**
+    * Get a block template on which mining a new block.
+    * @async
+    * @param {Object} opts
+    * @param {string} opts.wallet_address - Address of wallet to receive coinbase transactions if block is successfully mined.
+    * @param {number} opts.reserve_size - Reserve size.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  blockhashing_blob: '0b0bdc83ffe405686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a
+    *                     9000000000cc172232b1465580877b898f8f6021ad264705fb44d4ce4116576c951865dc6e02',
+    *  blocktemplate_blob: '0b0bdc83ffe405686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a
+    *                      900000000002b3e70801ffa1e70801919ef5bc46027fecb474827691e150863765eeb11c7fda
+    *                      e88e9cf413468b3f46a6fd1416174f2101958d80e5dd64b962d539a18e2fab89cd6abf1ddd2d
+    *                      f4b6c2b890c1fad31acd310001eae8de4b74bf117c059ba9b68c9e81a2465997319dd5805a90
+    *                      dfae8290b33ab9',
+    *  difficulty: 58700182,
+    *  expected_reward: 18918231825,
+    *  height: 144289,
+    *  prev_hash: '686cd8e06fea333582a7d521c6899a00266f107e9212ebe7b7626258893c9a90',
+    *  reserved_offset: 127,
+    *  status: 'OK',
+    *  untrusted: false
+    * }
+    */
+    getBlockTemplate: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({
+        wallet_address: 'Address',
+        reserve_size: 'Integer'
+      }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'getblocktemplate', opts)
+    },
+    /**
+    * Get the coinbase amount and the fees ammount for n last blocks starting at particular height.
+    * @async
+    * @param {Object} opts
+    * @param {number} opts.height -  unsigned int; Block height from which getting the amounts.
+    * @param {number} opts.count -  unsigned int; number of blocks to include in the sum
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  emission_amount: 7502006245466748,
+    *  fee_amount: 0,
+    *  status: 'OK'
+    * }
+    */
+    getCoinbaseTxSum: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({
+        height: 'Integer',
+        count: 'Integer'
+      }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_coinbase_tx_sum', opts)
+    },
+    /**
+    * Retrieve information about incoming and outgoing connections to your node.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  connections:
+    *  [
+    *   {
+    *    address: '192.154.226.212:19993',
+    *    avg_download: 1,
+    *    avg_upload: 0,
+    *    connection_id: 'cb8f0270c5b740fa9eb7aa1aedddb5cb',
+    *    current_download: 2,
+    *    current_upload: 0,
+    *    height: 145745,
+    *    host: '192.154.226.212',
+    *    incoming: false,
+    *    ip: '192.154.226.212',
+    *    live_time: 20,
+    *    local_ip: false,
+    *    localhost: false,
+    *    peer_id: 'c7f323892fb18784',
+    *    port: '19993',
+    *    pruning_seed: 0,
+    *    recv_count: 22852,
+    *    recv_idle_time: 13,
+    *    send_count: 568,
+    *    send_idle_time: 13,
+    *    state: 'normal',
+    *    support_flags: 1
+    *   }, ...
+    *  ]
+    * }
+    */
+    getConnections: async function () {
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_connections')
+    },
+    /**
+    * Gives an estimation on fees per kB.
+    * @async
+    * @param {Object} [opts]
+    * @param {number} [opts.grace_blocks] - unsigned int.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { fee: 7560, status: 'OK', untrusted: false }
+    */
+    getFeeEstimate: async function (opts) {
+      rpcHelpers.checkOptionalParametersType({ grace_blocks: 'Integer' }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_fee_estimate', opts)
+    },
+    /**
+    * Look up information regarding hard fork voting and readiness.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  earliest_height: 131650,
+    *  enabled: true,
+    *  state: 2,
+    *  status: 'OK',
+    *  threshold: 0,
+    *  untrusted: false,
+    *  version: 11,
+    *  votes: 10080,
+    *  voting: 11,
+    *  window: 10080
+    * }
+    */
+    getHardForkInfo: async function () {
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'hard_fork_info')
+    },
+    /**
+    * Retrieve general information about the state of your node and the network.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  alt_blocks_count: 0,
+    *  block_size_limit: 600000,
+    *  block_size_median: 147,
+    *  bootstrap_daemon_address: '',
+    *  cumulative_difficulty: 20431347989483,
+    *  database_size: 0,
+    *  difficulty: 75600102,
+    *  free_space: 243485646848,
+    *  grey_peerlist_size: 62,
+    *  height: 145746,
+    *  height_without_bootstrap: 145746,
+    *  incoming_connections_count: 7,
+    *  mainnet: true,
+    *  nettype: 'mainnet',
+    *  offline: false,
+    *  outgoing_connections_count: 8,
+    *  rpc_connections_count: 2,
+    *  stagenet: false,
+    *  start_time: 1554144733,
+    *  status: 'OK',
+    *  target: 120,
+    *  target_height: 145732,
+    *  testnet: false,
+    *  top_block_hash: '9df96b39bb2ca8953cbf8f2fffc8f9896a74f430cbe29dc0ad356986ef93024c',
+    *  tx_count: 179362,
+    *  tx_pool_size: 10,
+    *  untrusted: false,
+    *  was_bootstrap_ever_used: false,
+    *  white_peerlist_size: 38
+    * }
+    */
+    getInfo: async function () {
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_info')
+    },
+    /**
+    * Block header information for the most recent block is easily retrieved with this method.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  block_header:
+    *  {
+    *    block_size: 147,
+    *    cumulative_difficulty: 20379479802883,
+    *    depth: 0,
+    *    difficulty: 61400097,
+    *    hash: 'c99c2f9a53e4bab5d08f9820ee555d62059e0e9bf799fbe07a6137aac607f4e8',
+    *    height: 145009,
+    *    major_version: 11,
+    *    minor_version: 11,
+    *    nonce: 3441194797,
+    *    num_txes: 0,
+    *    orphan_status: false,
+    *    pow_hash: '',
+    *    prev_hash: '53d6437ac32fc49e0ee8b24f63046c6e1e6e0491f6d1b6797b025b66ad1b4a40',
+    *    reward: 18911700042,
+    *    timestamp: 1554058920 },
+    *    status: 'OK',
+    *    untrusted: false
+    *  }
+    *  count: 144188,
+    *  status: 'OK'
+    * }
+    */
+    getLastBlockHeader: async function () {
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_last_block_header')
+    },
+    /**
+    * Get Ouput Distribution.
+    * @async
+    * @param {Object} opts
+    * @param {number[]} opts.amounts -  list of amounts to look for.
+    * @param {boolean} [opts.cumulative] - (default is false) States if the result should be cumulative (true or false).
+    * @param {number} [opts.from_height] - (default is 0) - unsigned int.
+    * @param {number} [opts.to_height] - (default is 0) - unsigned int.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { status: 'OK', untrusted: false }
+    */
+    getOutputDistribution: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ amounts: 'ArrayOfIntegers' }, opts)
+
+      rpcHelpers.checkOptionalParametersType({
+        cumulative: 'Boolean',
+        from_height: 'Integer',
+        to_height: 'Integer'
+      }, opts)
+
+      opts.binary = false
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_output_distribution', opts)
+    },
+    /**
+    * Get a histogram of output amounts.
+    * @async
+    * @param {Object} [opts]
+    * @param {number[]} [opts.amounts] -  list of unsigned int.
+    * @param {number} [opts.min_count] -  unsigned int.
+    * @param {number} [opts.max_count] -  unsigned int.
+    * @param {boolean} [unlocked] -  boolean.
+    * @param {number} [recent_cutoff] -  unsigned int.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  histogram:
+    *  [
+    *   {
+    *    amount: 10000000,
+    *    recent_instances: 0,
+    *    total_instances: 1481,
+    *    unlocked_instances: 0
+    *   }
+    *  ],
+    *  status: 'OK',
+    *  untrusted: false
+    * }
+    */
+    getOutputHistogram: async function (opts) {
+      rpcHelpers.checkOptionalParametersType({
+        amounts: 'ArrayOfIntegers',
+        min_count: 'Integer',
+        max_count: 'Integer',
+        unlocked: 'Boolean',
+        recent_cutoff: 'Integer'
+      }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_output_histogram', opts)
+    },
+    /**
+    * Give the node current version.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { status: 'OK', untrusted: false, version: 131077 }
+    */
+    getVersion: async function () {
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'get_version')
+    },
+    /**
+    * Get the known blocks hashes which are not on the main chain.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    */
+    otherGetAltBlocksHashes: async function () {
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'get_alt_blocks_hashes')
+    },
+    /**
+    * Get the node's current height.
+    * @async
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { height: 149045, status: 'OK', untrusted: false }
+    */
+    otherGetHeight: async function () {
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'get_height')
+    },
+    /**
+    * Get daemon bandwidth limits.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  "limit_down": 8192,
+    *  "limit_up": 128,
+    *  "status": "OK",
+    *  "untrusted": false
+    * }
+    */
+    otherGetLimit: async function () {
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'get_limit')
+    },
+    /**
+    * Get the known peers list.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  gray_list:
+    *  [
+    *   { host: '135790251',
+    *     id: 17703185689409910000,
+    *     ip: 135790251,
+    *     last_seen: 1551473999,
+    *     port: 19993,
+    *     pruning_seed: 0 }, ...
+    *  ]
+    *  status: 'OK',
+    *  white_list:
+    *  [
+    *   { host: '35263064',
+    *     id: 3764929947382960000,
+    *     ip: 35263064,
+    *     last_seen: 1554553579,
+    *     port: 19993,
+    *     pruning_seed: 0 }, ...
+    *  ]
+    * }
+    */
+    otherGetPeerList: async function () {
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'get_peer_list')
+    },
+    /**
+    * Show information about valid transactions seen by the node but not yet mined into a block, as well as spent key image information for the txpool in the node's memory.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  spent_key_images:
+    *  [
+    *   { id_hash: '12f6051aea57b598e7aefe436545ab55f449b11d392fffd76e33eef53ad9b962',
+    *     txs_hashes: [Array] },
+     *    ...
+     * ],
+     * status: 'OK',
+     * transactions:
+     * [
+     *  { blob_size: 4384,
+     *    do_not_relay: false,
+     *    double_spend_seen: false,
+     *    fee: 37750,
+     *    id_hash:
+     *    '3fa2745621696d4e87d997e32409469cc3d734fda186f37878b8db2972a99a41',
+     *    kept_by_block: false,
+     *    last_failed_height: 0,
+     *    last_failed_id_hash:
+     *    '0000000000000000000000000000000000000000000000000000000000000000',
+     *    last_relayed_time: 1554589504,
+     *    max_used_block_height: 149373,
+     *    max_used_block_id_hash:
+     *    '3ed0b7d1c294def73dda48c6b3f43d724525fcbc08672782ec3a1e4c5a1b2f01',
+     *    receive_time: 1554589504,
+     *    relayed: true,
+     *    tx_blob: ... ,
+     *    tx_json: ... ,
+     *   }
+     * ],
+     * untrusted: false
+     * }
+    */
+    otherGetTransactionPool: async function () {
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'get_transaction_pool')
+    },
+    /**
+    * Get the transaction pool statistics.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  pool_stats:
+    *  {
+    *   bytes_max: 2785,
+    *   bytes_med: 2785,
+    *   bytes_min: 2785,
+    *   bytes_total: 2785,
+    *   fee_total: 22650,
+    *   histo_98pc: 0,
+    *   num_10m: 0,
+    *   num_double_spends: 0,
+    *   num_failing: 0,
+    *   num_not_relayed: 0,
+    *   oldest: 1554589922,
+    *   txs_total: 1
+    *  },
+    *  status: 'OK',
+    *  untrusted: false
+    * }
+    */
+    otherGetTransactionPoolStats: async function () {
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'get_transaction_pool_stats')
+    },
+    /**
+    * Full block information can be retrieved by either block height or hash.
+    * @async
+    * @param {Object} opts
+    * @param {string[]} opts.tx_hashes -  List of transaction hashes to look up.
+    * @param {boolean} [opts.decode_as_json] - (false by default). If set true, the returned transaction information will be decoded rather than binary.
+    * @param {boolean} [opts.prune] - (false by default).
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  status: 'OK',
+    *  txs:
+    *  [
+    *   {
+    *    as_hex: '02000202 ... 0f',
+    *    as_json: '',
+    *    block_height: 140732,
+    *    block_timestamp: 1553537372,
+    *    double_spend_seen: false,
+    *    in_pool: false,
+    *    output_indices: [Array],
+    *    prunable_as_hex: '',
+    *    prunable_hash:
+    *    '79f87397ef265f27b32a659e0f3f73496527e2cb97228ee4a82f31ec972bd65b',
+    *    pruned_as_hex: '',
+    *    tx_hash: 'a43c51e3a216bb702e6be2746c02a366c8e3a05b08b50da5ada8e9481418e350'
+    *   }
+    *  ],
+    *  txs_as_hex: [ '02000202 ... 0f' ],
+    *  untrusted: false
+    * }
+    */
+    otherGetTransactions: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ txs_hashes: 'ArrayOfHashes' }, opts)
+
+      rpcHelpers.checkOptionalParametersType({
+        decode_as_json: 'Boolean',
+        prune: 'Boolean'
+      }, opts)
+
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'get_transactions', opts)
+    },
+    /**
+    * Check if outputs have been spent using the key image associated with the output.
+    * @async
+    * @param {Object} opts
+    * @param {string[]} opts.key_images -  list of block blobs which have been mined.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { spent_status: [ 1 ], status: 'OK', untrusted: false }
+    */
+    otherIsKeyImageSpent: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ key_images: 'ArrayOfHashes' }, opts)
+
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'is_key_image_spent', opts)
+    },
+    /**
+    * Limit number of incoming peers.
+    * @async
+    * @param {Object} opts
+    * @param {number} opts.in_peers - Max number of incoming peers.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { status: 'OK' }
+    */
+    otherInPeers: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ in_peers: 'Integer' }, opts)
+
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'in_peers', opts)
+    },
+    /**
+    * Limit number of outgoing peers.
+    * @async
+    * @param {Object} opts
+    * @param {number} opts.out_peers - Max number of outgoing peers.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { status: 'OK' }
+    */
+    otherOutPeers: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ out_peers: 'Integer' }, opts)
+
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'out_peers', opts)
+    },
+    /**
+    * Get the mining status of the daemon.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  active: true,
+    *  address: 'ar4bfzwH4726kamvTg2wRNLkw16MR6DbbZMyuShYgKs58SknoAF8q7PBQ1XXAsGgH9feTWKKmYZNjaWphc7Wce1u33iKe2cL9',
+    *  is_background_mining_enabled: true,
+    *  speed: 2,
+    *  status: 'OK',
+    *  threads_count: 1
+    * }
+    */
+    otherMiningStatus: async function () {
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'mining_status')
+    },
+    /**
+    * Save the blockchain. The blockchain does not need saving and is always saved when modified, however it does a sync to flush the filesystem cache onto the disk for safety purposes against Operating System or Hardware crashes.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { status: 'OK' }
+    */
+    otherSaveBc: async function () {
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'save_bc')
+    },
+    /**
+    * Broadcast a raw transaction to the network.
+    * @async
+    * @param {Object} opts
+    * @param {string} opts.tx_as_hex -  Full transaction information as hexidecimal string.
+    * @param {boolean} [opts.do_not_relay] - (false by default). Stop relaying transaction to other nodes.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  double_spend: false,
+    *  fee_too_low: false,
+    *  invalid_input: false,
+    *  invalid_output: false,
+    *  low_mixin: false,
+    *  not_rct: false,
+    *  not_relayed: true,
+    *  overspend: false,
+    *  reason: 'Not relayed',
+    *  status: 'OK',
+    *  too_big: false,
+    *  untrusted: false
+    * }
+    */
+    otherSendRawTransaction: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ tx_as_hex: 'String' }, opts)
+
+      rpcHelpers.checkOptionalParametersType({ do_not_relay: 'Boolean' }, opts)
+
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'send_raw_transaction', opts)
+    },
+    /**
+    * Set daemon bandwidth limits.
+    * @async
+    * @param {Object} opts
+    * @param {number} [opts.limit_down] - Download limit in kBytes per second (-1 reset to default, 0 don't change the current limit).
+    * @param {number} [opts.limit_up] - Upload limit in kBytes per second (-1 reset to default, 0 don't change the current limit).
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  limit_down: 16384,
+    *  limit_up: 4096,
+    *  status: 'OK'
+    * }
+    */
+    otherSetLimit: async function (opts) {
+      rpcHelpers.checkOptionalParametersType({
+        limit_down: 'Integer',
+        limit_up: 'Integer'
+      }, opts)
+
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'set_limit', opts)
+    },
+    /**
+    * Set the daemon log categories.&lt;br>
+    * Categories are represented as a comma separated list of &lt;Category\>:&lt;level\> (similarly to syslog standard &lt;Facility\>:&lt;Severity-level\>), where:
+    * &lt;p>&lt;ul>
+    * Category is one of the following:
+    *   &lt;li>\* - All facilities&lt;/li>
+    *   &lt;li>default&lt;/li>
+    *   &lt;li>net&lt;/li>
+    *   &lt;li>net.http&lt;/li>
+    *   &lt;li>net.p2p&lt;/li>
+    *   &lt;li>logging&lt;/li>
+    *   &lt;li>net.throttle&lt;/li>
+    *   &lt;li>blockchain.db&lt;/li>
+    *   &lt;li>blockchain.db.lmdb&lt;/li>
+    *   &lt;li>bcutil&lt;/li>
+    *   &lt;li>checkpoints&lt;/li>
+    *   &lt;li>net.dns&lt;/li>
+    *   &lt;li>net.dl&lt;/li>
+    *   &lt;li>i18n&lt;/li>
+    *   &lt;li>perf&lt;/li>
+    *   &lt;li>stacktrace&lt;/li>
+    *   &lt;li>updates&lt;/li>
+    *   &lt;li>account&lt;/li>
+    *   &lt;li>cn&lt;/li>
+    *   &lt;li>difficulty&lt;/li>
+    *   &lt;li>hardfork&lt;/li>
+    *   &lt;li>miner&lt;/li>
+    *   &lt;li>blockchain&lt;/li>
+    *   &lt;li>txpool&lt;/li>
+    *   &lt;li>cn.block_queue&lt;/li>
+    *   &lt;li>net.cn&lt;/li>
+    *   &lt;li>daemon&lt;/li>
+    *   &lt;li>debugtools.deserialize&lt;/li>
+    *   &lt;li>debugtools.objectsizes&lt;/li>
+    *   &lt;li>device.ledger&lt;/li>
+    *   &lt;li>wallet.gen_multisig&lt;/li>
+    *   &lt;li>multisig&lt;/li>
+    *   &lt;li>bulletproofs&lt;/li>
+    *   &lt;li>ringct&lt;/li>
+    *   &lt;li>daemon.rpc&lt;/li>
+    *   &lt;li>wallet.simplewallet&lt;/li>
+    *   &lt;li>WalletAPI&lt;/li>
+    *   &lt;li>wallet.ringdb&lt;/li>
+    *   &lt;li>wallet.wallet2&lt;/li>
+    *   &lt;li>wallet.rpc&lt;/li>
+    *   &lt;li>tests.core
+    *   &lt;/ul>
+    * &lt;ul>
+    * Level is one of the following:
+    *   &lt;li>FATAL - higher level&lt;/li>
+    *   &lt;li>ERROR&lt;/li>
+    *   &lt;li>WARNING&lt;/li>
+    *   &lt;li>INFO&lt;/li>
+    *   &lt;li>DEBUG&lt;/li>
+    *   &lt;li>TRACE - lower level A level automatically includes higher level.&lt;/li>
+    *   &lt;/ul>&lt;/p>
+    *   By default, categories are set to *:WARNING,net:FATAL,net.p2p:FATAL,net.cn:FATAL,global:INFO,verify:FATAL,stacktrace:INFO,logging:INFO,msgwriter:INFO.&lt;br>
+    *   Setting the categories to "" prevent any logs to be outputed.
+    * @async
+    * @param {Object} opts
+    * @param {string} [opts.categories] - Daemon log categories to enable.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  "categories": "*:INFO",
+    *  "status": "OK"
+    * }
+    */
+    otherSetLogCategories: async function (opts) {
+      rpcHelpers.checkOptionalParametersType({ categories: 'String' }, opts)
+
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'set_log_categories', opts)
+    },
+    /**
+    * Set the log hash rate display mode.
+    * @async
+    * @param {Object} opts
+    * @param {boolean} opts.visible - States if hash rate logs should be visible (true) or hidden (false)
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output while mining&lt;/b>&lt;/caption>
+    * { "status": "OK" }
+    * @example &lt;caption>&lt;b>Output while NOT mining. You need to catch it with promise.&lt;/b>&lt;/caption>
+    * Error: NOT MINING
+    * at _request.then (C:\myDev\scala-rpc-js\src\rpcDaemon.js:1418:27)
+    * at process._tickCallback (internal/process/next_tick.js:68:7)
+    */
+    otherSetLogHashrate: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ visible: 'Boolean' }, opts)
+
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'set_log_hash_rate', opts)
+    },
+    /**
+    * Set the daemon log level. By default, log level is set to 0.
+    * @async
+    * @param {Object} opts
+    * @param {number} opts.level - Daemon log level to set from 0 (less verbose) to 4 (most verbose).
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { "status": "OK" }
+    */
+    otherSetLogLevel: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ level: 'Integer' }, opts)
+
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'set_log_level', opts)
+    },
+    /**
+    * Start mining on the daemon.
+    * @async
+    * @param {Object} opts
+    * @param {boolean} opts.do_background_mining - States if the mining should run in background (true) or foreground (false).
+    * @param {boolean} opts.ignore_battery - States if batery state (on laptop) should be ignored (true) or not (false).
+    * @param {string} opts.miner_address - Account address to mine to.
+    * @param {number} opts.threads_count - Number of mining thread to run.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { status: 'OK' }
+    */
+    otherStartMining: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({
+        do_background_mining: 'Boolean',
+        ignore_battery: 'Boolean',
+        miner_address: 'Address',
+        threads_count: 'Integer'
+      }, opts)
+
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'start_mining', opts)
+    },
+    /**
+    * Send a command to the daemon to safely disconnect and shut down.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { "status": "OK" }
+    */
+    otherStopDaemon: async function () {
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'stop_daemon')
+    },
+    /**
+    * Stop mining on the daemon.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { status: 'OK' }
+    */
+    otherStopMining: async function () {
+      return rpcHelpers.makeOtherQuery(httpClient, config.url, queue, parseDaemonResponse, 'stop_mining')
+    },
+    /**
+    * Relay a list of transaction IDs.
+    * @async
+    * @param {Object} opts
+    * @param {string[]} opts.txids - list of transaction IDs to relay.
+    * @returns {Promise} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { status: 'OK' }
+    */
+    relayTx: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ txids: 'ArrayOfHashes' }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'relay_tx', opts)
+    },
+    /**
+    * Ban another node by IP.
+    * @async
+    * @param {Object} opts
+    * @param {Array} opts.bans
+    * @param {string} [opts.bans[].host] - Host to ban.
+    * @param {number} [opts.bans[].ip] - IP address to ban, in Int format.
+    * @param {boolean} opts.bans[].ban - Set true to ban.
+    * @param {number} opts.bans[].seconds - Number of seconds to ban node.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * { status: 'OK' }
+    */
+    setBans: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ bans: 'ArrayOfBans' }, opts)
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'set_bans', opts)
+    },
+    /**
+    * Look up a block's hash by its height.
+    * @async
+    * @param {Object} opts
+    * @param {string[]} opts.blobs -  list of block blobs which have been mined.
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output with error message when the block is not accepted. You need to catch it with promise.&lt;/b>&lt;/caption>
+    * { Error: Block not accepted
+    *   at _request.then (C:\myDev\scala-rpc-js\src\rpcDaemon.js:761:25)
+    *   at process._tickCallback (internal/process/next_tick.js:68:7) code: -7 }
+    */
+    submitBlock: async function (opts) {
+      rpcHelpers.checkMandatoryParameters({ blobs: 'ArrayOfStrings' }, opts)
+
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'submit_block', opts.blobs)
+    },
+    /**
+    * Get synchronisation informations.
+    * @async
+    * @returns {Promise&lt;object>} Promise object.
+    * @example &lt;caption>&lt;b>Output&lt;/b>&lt;/caption>
+    * {
+    *  height: 149027,
+    *  next_needed_pruning_seed: 0,
+    *  overview: '[]',
+    *  peers:
+    *  [
+    *   { info: [Object] },
+    *   { info: [Object] },
+    *   ... ,
+    *   { info: [Object] }
+    *  ],
+    *  status: 'OK',
+    *  target_height: 149009
+    * }
+    */
+    syncInfo: async function () {
+      return rpcHelpers.makeJsonQuery(httpClient, jsonAddress, queue, parseDaemonResponse, 'sync_info')
+    }
+  }
+}
+
+exports = module.exports = rpcDaemon
+</code></pre>
+  </article>
+</section>
+
+    
+
+
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+  </footer>
+
+    
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+  <script src="scripts/scrollbar.js"></script>
+  <script src="scripts/collapsible.js"></script>
+  <script src="scripts/jquery.selectric.min.js"></script>
+  <script src="scripts/clipboard.min.js"></script>
+
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  <script>
+      $(function () {
+          $('#menu-container').scrollbar();
+
+          
+      });
+    </script>
+</body>
+</html>
