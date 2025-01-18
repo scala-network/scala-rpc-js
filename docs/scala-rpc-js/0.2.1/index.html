@@ -1,127 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>JSDoc: Home</title>
 
-  <title>
-      Scala Javascript RPC Library - Documentation
-  </title>
-
-  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <link id="google-font" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Cutive+Mono|Roboto:300,400,700" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="styles/highlight-themes/current.css">
-  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
-  <link type="text/css" rel="stylesheet" href="styles/collapsible.css">
-  <link type="text/css" rel="stylesheet" href="styles/style-switcher.css">
-  <link type="text/css" rel="stylesheet" href="styles/selectric.css">
-  
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <script src="https://embed.runkit.com"></script>
-  <style id="style-switcher-styles">
-    nav {
-        background: #282c34;
-    }
-    .hljs {
-        background: #1d2027;
-    }
-    .nav-container > ul > li.active a {
-        color: #BAB87E;
-    }
-    .nav-container > ul > li.active a:hover {
-        color: #8F8D61;
-    }
-    .nav-container > ul > li.active ul {
-        border-color: #8F8D61;
-    }
-    h4.name {
-        color: #8F8D61;
-    }
-    .params > div > code, .params > div > em {
-        color: #8F8D61;
-    }
-    a, a:active {
-        color: #8F8D61;
-    }
-    .hljs-doctag, .hljs-keyword, .hljs-formula {
-        color: #8F8D61;
-    }
-    nav ul a:hover, nav ul a:active {
-        color: #8F8D61;
-    }
-  </style>
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
 
 <body>
-  <header class="header-fixed">
-      <h1>
-        <a href="index.html" title="modernTemplate.title">
-            
-            Scala RPC JS
-        </a>
-      </h1>
-      <div class="center-header">
-          <ul>
-            
-          </ul>
-      </div>
-      <div class="right-header">
-           
-                <a href="https://github.com/scala-network/scala-rpc-js" title="View it on Github" style="">
-                    <i class="fab fa-github-alt"></i>
-                </a>
-           
-                <a href="https://www.npmjs.com/package/scala-rpc-js" title="View it on NPM" style="font-size: 19px">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </a>
-           
-      </div>
-  </header>
 
-  <svg style="display: none;">
-    <defs>
-      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0h24v24H0z" fill="none"/>
-          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
-      </symbol>
-    </defs>
-  </svg>
+<div id="main">
 
-  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-  <label for="nav-trigger" class="navicon-button x">
-    <div class="navicon"></div>
-  </label>
-
-  <label for="nav-trigger" class="overlay"></label>
-
-  <nav>
-    <div id="menu-container" class="scrollbar-inner">
-        <div class="nav-container">
-            <h3>Modules</h3><ul><li id="RPCDaemon-nav"><a href="module-RPCDaemon.html">RPCDaemon</a><ul class='methods'><li data-type="method" id="RPCDaemon-createDaemonClient-nav"><a href="module-RPCDaemon.html#.createDaemonClient">createDaemonClient</a></li><li data-type="method" id="RPCDaemon-flushTxPool-nav"><a href="module-RPCDaemon.html#~flushTxPool">flushTxPool</a></li><li data-type="method" id="RPCDaemon-getAlternateChains-nav"><a href="module-RPCDaemon.html#~getAlternateChains">getAlternateChains</a></li><li data-type="method" id="RPCDaemon-getBans-nav"><a href="module-RPCDaemon.html#~getBans">getBans</a></li><li data-type="method" id="RPCDaemon-getBlock-nav"><a href="module-RPCDaemon.html#~getBlock">getBlock</a></li><li data-type="method" id="RPCDaemon-getBlockCount-nav"><a href="module-RPCDaemon.html#~getBlockCount">getBlockCount</a></li><li data-type="method" id="RPCDaemon-getBlockHash-nav"><a href="module-RPCDaemon.html#~getBlockHash">getBlockHash</a></li><li data-type="method" id="RPCDaemon-getBlockHeaderByHash-nav"><a href="module-RPCDaemon.html#~getBlockHeaderByHash">getBlockHeaderByHash</a></li><li data-type="method" id="RPCDaemon-getBlockHeaderByHeight-nav"><a href="module-RPCDaemon.html#~getBlockHeaderByHeight">getBlockHeaderByHeight</a></li><li data-type="method" id="RPCDaemon-getBlockHeadersRange-nav"><a href="module-RPCDaemon.html#~getBlockHeadersRange">getBlockHeadersRange</a></li><li data-type="method" id="RPCDaemon-getBlocksRange-nav"><a href="module-RPCDaemon.html#~getBlocksRange">getBlocksRange</a></li><li data-type="method" id="RPCDaemon-getBlockTemplate-nav"><a href="module-RPCDaemon.html#~getBlockTemplate">getBlockTemplate</a></li><li data-type="method" id="RPCDaemon-getCoinbaseTxSum-nav"><a href="module-RPCDaemon.html#~getCoinbaseTxSum">getCoinbaseTxSum</a></li><li data-type="method" id="RPCDaemon-getConnections-nav"><a href="module-RPCDaemon.html#~getConnections">getConnections</a></li><li data-type="method" id="RPCDaemon-getFeeEstimate-nav"><a href="module-RPCDaemon.html#~getFeeEstimate">getFeeEstimate</a></li><li data-type="method" id="RPCDaemon-getHardForkInfo-nav"><a href="module-RPCDaemon.html#~getHardForkInfo">getHardForkInfo</a></li><li data-type="method" id="RPCDaemon-getInfo-nav"><a href="module-RPCDaemon.html#~getInfo">getInfo</a></li><li data-type="method" id="RPCDaemon-getLastBlockHeader-nav"><a href="module-RPCDaemon.html#~getLastBlockHeader">getLastBlockHeader</a></li><li data-type="method" id="RPCDaemon-getOutputDistribution-nav"><a href="module-RPCDaemon.html#~getOutputDistribution">getOutputDistribution</a></li><li data-type="method" id="RPCDaemon-getOutputHistogram-nav"><a href="module-RPCDaemon.html#~getOutputHistogram">getOutputHistogram</a></li><li data-type="method" id="RPCDaemon-getVersion-nav"><a href="module-RPCDaemon.html#~getVersion">getVersion</a></li><li data-type="method" id="RPCDaemon-otherGetAltBlocksHashes-nav"><a href="module-RPCDaemon.html#~otherGetAltBlocksHashes">otherGetAltBlocksHashes</a></li><li data-type="method" id="RPCDaemon-otherGetHeight-nav"><a href="module-RPCDaemon.html#~otherGetHeight">otherGetHeight</a></li><li data-type="method" id="RPCDaemon-otherGetLimit-nav"><a href="module-RPCDaemon.html#~otherGetLimit">otherGetLimit</a></li><li data-type="method" id="RPCDaemon-otherGetPeerList-nav"><a href="module-RPCDaemon.html#~otherGetPeerList">otherGetPeerList</a></li><li data-type="method" id="RPCDaemon-otherGetTransactionPool-nav"><a href="module-RPCDaemon.html#~otherGetTransactionPool">otherGetTransactionPool</a></li><li data-type="method" id="RPCDaemon-otherGetTransactionPoolStats-nav"><a href="module-RPCDaemon.html#~otherGetTransactionPoolStats">otherGetTransactionPoolStats</a></li><li data-type="method" id="RPCDaemon-otherGetTransactions-nav"><a href="module-RPCDaemon.html#~otherGetTransactions">otherGetTransactions</a></li><li data-type="method" id="RPCDaemon-otherInPeers-nav"><a href="module-RPCDaemon.html#~otherInPeers">otherInPeers</a></li><li data-type="method" id="RPCDaemon-otherIsKeyImageSpent-nav"><a href="module-RPCDaemon.html#~otherIsKeyImageSpent">otherIsKeyImageSpent</a></li><li data-type="method" id="RPCDaemon-otherMiningStatus-nav"><a href="module-RPCDaemon.html#~otherMiningStatus">otherMiningStatus</a></li><li data-type="method" id="RPCDaemon-otherOutPeers-nav"><a href="module-RPCDaemon.html#~otherOutPeers">otherOutPeers</a></li><li data-type="method" id="RPCDaemon-otherSaveBc-nav"><a href="module-RPCDaemon.html#~otherSaveBc">otherSaveBc</a></li><li data-type="method" id="RPCDaemon-otherSendRawTransaction-nav"><a href="module-RPCDaemon.html#~otherSendRawTransaction">otherSendRawTransaction</a></li><li data-type="method" id="RPCDaemon-otherSetLimit-nav"><a href="module-RPCDaemon.html#~otherSetLimit">otherSetLimit</a></li><li data-type="method" id="RPCDaemon-otherSetLogCategories-nav"><a href="module-RPCDaemon.html#~otherSetLogCategories">otherSetLogCategories</a></li><li data-type="method" id="RPCDaemon-otherSetLogHashrate-nav"><a href="module-RPCDaemon.html#~otherSetLogHashrate">otherSetLogHashrate</a></li><li data-type="method" id="RPCDaemon-otherSetLogLevel-nav"><a href="module-RPCDaemon.html#~otherSetLogLevel">otherSetLogLevel</a></li><li data-type="method" id="RPCDaemon-otherStartMining-nav"><a href="module-RPCDaemon.html#~otherStartMining">otherStartMining</a></li><li data-type="method" id="RPCDaemon-otherStopDaemon-nav"><a href="module-RPCDaemon.html#~otherStopDaemon">otherStopDaemon</a></li><li data-type="method" id="RPCDaemon-otherStopMining-nav"><a href="module-RPCDaemon.html#~otherStopMining">otherStopMining</a></li><li data-type="method" id="RPCDaemon-relayTx-nav"><a href="module-RPCDaemon.html#~relayTx">relayTx</a></li><li data-type="method" id="RPCDaemon-resetNonces-nav"><a href="module-RPCDaemon.html#~resetNonces">resetNonces</a></li><li data-type="method" id="RPCDaemon-setBans-nav"><a href="module-RPCDaemon.html#~setBans">setBans</a></li><li data-type="method" id="RPCDaemon-sslRejectUnauthorized-nav"><a href="module-RPCDaemon.html#~sslRejectUnauthorized">sslRejectUnauthorized</a></li><li data-type="method" id="RPCDaemon-submitBlock-nav"><a href="module-RPCDaemon.html#~submitBlock">submitBlock</a></li><li data-type="method" id="RPCDaemon-syncInfo-nav"><a href="module-RPCDaemon.html#~syncInfo">syncInfo</a></li></ul></li><li id="RPCWallet-nav"><a href="module-RPCWallet.html">RPCWallet</a><ul class='methods'><li data-type="method" id="RPCWallet-createWalletClient-nav"><a href="module-RPCWallet.html#.createWalletClient">createWalletClient</a></li><li data-type="method" id="RPCWallet-addAddressBook-nav"><a href="module-RPCWallet.html#~addAddressBook">addAddressBook</a></li><li data-type="method" id="RPCWallet-autoRefresh-nav"><a href="module-RPCWallet.html#~autoRefresh">autoRefresh</a></li><li data-type="method" id="RPCWallet-changeWalletPassword-nav"><a href="module-RPCWallet.html#~changeWalletPassword">changeWalletPassword</a></li><li data-type="method" id="RPCWallet-checkReserveProof-nav"><a href="module-RPCWallet.html#~checkReserveProof">checkReserveProof</a></li><li data-type="method" id="RPCWallet-checkSpendProof-nav"><a href="module-RPCWallet.html#~checkSpendProof">checkSpendProof</a></li><li data-type="method" id="RPCWallet-checkTxKey-nav"><a href="module-RPCWallet.html#~checkTxKey">checkTxKey</a></li><li data-type="method" id="RPCWallet-checkTxProof-nav"><a href="module-RPCWallet.html#~checkTxProof">checkTxProof</a></li><li data-type="method" id="RPCWallet-closeWallet-nav"><a href="module-RPCWallet.html#~closeWallet">closeWallet</a></li><li data-type="method" id="RPCWallet-createAccount-nav"><a href="module-RPCWallet.html#~createAccount">createAccount</a></li><li data-type="method" id="RPCWallet-createAddress-nav"><a href="module-RPCWallet.html#~createAddress">createAddress</a></li><li data-type="method" id="RPCWallet-createWallet-nav"><a href="module-RPCWallet.html#~createWallet">createWallet</a></li><li data-type="method" id="RPCWallet-deleteAddressBook-nav"><a href="module-RPCWallet.html#~deleteAddressBook">deleteAddressBook</a></li><li data-type="method" id="RPCWallet-exportKeyImages-nav"><a href="module-RPCWallet.html#~exportKeyImages">exportKeyImages</a></li><li data-type="method" id="RPCWallet-exportMultisigInfo-nav"><a href="module-RPCWallet.html#~exportMultisigInfo">exportMultisigInfo</a></li><li data-type="method" id="RPCWallet-exportOutputs-nav"><a href="module-RPCWallet.html#~exportOutputs">exportOutputs</a></li><li data-type="method" id="RPCWallet-finalizeMultisig-nav"><a href="module-RPCWallet.html#~finalizeMultisig">finalizeMultisig</a></li><li data-type="method" id="RPCWallet-generateFromKeys-nav"><a href="module-RPCWallet.html#~generateFromKeys">generateFromKeys</a></li><li data-type="method" id="RPCWallet-getAccounts-nav"><a href="module-RPCWallet.html#~getAccounts">getAccounts</a></li><li data-type="method" id="RPCWallet-getAccountTags-nav"><a href="module-RPCWallet.html#~getAccountTags">getAccountTags</a></li><li data-type="method" id="RPCWallet-getAddress-nav"><a href="module-RPCWallet.html#~getAddress">getAddress</a></li><li data-type="method" id="RPCWallet-getAddressBook-nav"><a href="module-RPCWallet.html#~getAddressBook">getAddressBook</a></li><li data-type="method" id="RPCWallet-getAddressIndex-nav"><a href="module-RPCWallet.html#~getAddressIndex">getAddressIndex</a></li><li data-type="method" id="RPCWallet-getAttribute-nav"><a href="module-RPCWallet.html#~getAttribute">getAttribute</a></li><li data-type="method" id="RPCWallet-getBalance-nav"><a href="module-RPCWallet.html#~getBalance">getBalance</a></li><li data-type="method" id="RPCWallet-getBulkPayments-nav"><a href="module-RPCWallet.html#~getBulkPayments">getBulkPayments</a></li><li data-type="method" id="RPCWallet-getHeight-nav"><a href="module-RPCWallet.html#~getHeight">getHeight</a></li><li data-type="method" id="RPCWallet-getLanguages-nav"><a href="module-RPCWallet.html#~getLanguages">getLanguages</a></li><li data-type="method" id="RPCWallet-getPayments-nav"><a href="module-RPCWallet.html#~getPayments">getPayments</a></li><li data-type="method" id="RPCWallet-getReserveProof-nav"><a href="module-RPCWallet.html#~getReserveProof">getReserveProof</a></li><li data-type="method" id="RPCWallet-getSpendProof-nav"><a href="module-RPCWallet.html#~getSpendProof">getSpendProof</a></li><li data-type="method" id="RPCWallet-getTransferByTxId-nav"><a href="module-RPCWallet.html#~getTransferByTxId">getTransferByTxId</a></li><li data-type="method" id="RPCWallet-getTransfers-nav"><a href="module-RPCWallet.html#~getTransfers">getTransfers</a></li><li data-type="method" id="RPCWallet-getTxKey-nav"><a href="module-RPCWallet.html#~getTxKey">getTxKey</a></li><li data-type="method" id="RPCWallet-getTxNotes-nav"><a href="module-RPCWallet.html#~getTxNotes">getTxNotes</a></li><li data-type="method" id="RPCWallet-getTxProof-nav"><a href="module-RPCWallet.html#~getTxProof">getTxProof</a></li><li data-type="method" id="RPCWallet-getVersion-nav"><a href="module-RPCWallet.html#~getVersion">getVersion</a></li><li data-type="method" id="RPCWallet-importKeyImages-nav"><a href="module-RPCWallet.html#~importKeyImages">importKeyImages</a></li><li data-type="method" id="RPCWallet-importMultisigInfo-nav"><a href="module-RPCWallet.html#~importMultisigInfo">importMultisigInfo</a></li><li data-type="method" id="RPCWallet-importOutputs-nav"><a href="module-RPCWallet.html#~importOutputs">importOutputs</a></li><li data-type="method" id="RPCWallet-incomingTransfers-nav"><a href="module-RPCWallet.html#~incomingTransfers">incomingTransfers</a></li><li data-type="method" id="RPCWallet-isMultisig-nav"><a href="module-RPCWallet.html#~isMultisig">isMultisig</a></li><li data-type="method" id="RPCWallet-labelAccount-nav"><a href="module-RPCWallet.html#~labelAccount">labelAccount</a></li><li data-type="method" id="RPCWallet-labelAddress-nav"><a href="module-RPCWallet.html#~labelAddress">labelAddress</a></li><li data-type="method" id="RPCWallet-makeIntegratedAddress-nav"><a href="module-RPCWallet.html#~makeIntegratedAddress">makeIntegratedAddress</a></li><li data-type="method" id="RPCWallet-makeMultisig-nav"><a href="module-RPCWallet.html#~makeMultisig">makeMultisig</a></li><li data-type="method" id="RPCWallet-makeUri-nav"><a href="module-RPCWallet.html#~makeUri">makeUri</a></li><li data-type="method" id="RPCWallet-openWallet-nav"><a href="module-RPCWallet.html#~openWallet">openWallet</a></li><li data-type="method" id="RPCWallet-parseUri-nav"><a href="module-RPCWallet.html#~parseUri">parseUri</a></li><li data-type="method" id="RPCWallet-prepareMultisig-nav"><a href="module-RPCWallet.html#~prepareMultisig">prepareMultisig</a></li><li data-type="method" id="RPCWallet-queryKey-nav"><a href="module-RPCWallet.html#~queryKey">queryKey</a></li><li data-type="method" id="RPCWallet-refresh-nav"><a href="module-RPCWallet.html#~refresh">refresh</a></li><li data-type="method" id="RPCWallet-relayTx-nav"><a href="module-RPCWallet.html#~relayTx">relayTx</a></li><li data-type="method" id="RPCWallet-rescanBlockchain-nav"><a href="module-RPCWallet.html#~rescanBlockchain">rescanBlockchain</a></li><li data-type="method" id="RPCWallet-rescanSpent-nav"><a href="module-RPCWallet.html#~rescanSpent">rescanSpent</a></li><li data-type="method" id="RPCWallet-resetNonces-nav"><a href="module-RPCWallet.html#~resetNonces">resetNonces</a></li><li data-type="method" id="RPCWallet-restoreDeterministicWallet-nav"><a href="module-RPCWallet.html#~restoreDeterministicWallet">restoreDeterministicWallet</a></li><li data-type="method" id="RPCWallet-setAccountTagDescription-nav"><a href="module-RPCWallet.html#~setAccountTagDescription">setAccountTagDescription</a></li><li data-type="method" id="RPCWallet-setAttribute-nav"><a href="module-RPCWallet.html#~setAttribute">setAttribute</a></li><li data-type="method" id="RPCWallet-setDaemon-nav"><a href="module-RPCWallet.html#~setDaemon">setDaemon</a></li><li data-type="method" id="RPCWallet-setLogCategories-nav"><a href="module-RPCWallet.html#~setLogCategories">setLogCategories</a></li><li data-type="method" id="RPCWallet-setLogLevel-nav"><a href="module-RPCWallet.html#~setLogLevel">setLogLevel</a></li><li data-type="method" id="RPCWallet-setTxNotes-nav"><a href="module-RPCWallet.html#~setTxNotes">setTxNotes</a></li><li data-type="method" id="RPCWallet-sign-nav"><a href="module-RPCWallet.html#~sign">sign</a></li><li data-type="method" id="RPCWallet-signMultisig-nav"><a href="module-RPCWallet.html#~signMultisig">signMultisig</a></li><li data-type="method" id="RPCWallet-signTransfer-nav"><a href="module-RPCWallet.html#~signTransfer">signTransfer</a></li><li data-type="method" id="RPCWallet-splitIntegratedAddress-nav"><a href="module-RPCWallet.html#~splitIntegratedAddress">splitIntegratedAddress</a></li><li data-type="method" id="RPCWallet-sslRejectUnauthorized-nav"><a href="module-RPCWallet.html#~sslRejectUnauthorized">sslRejectUnauthorized</a></li><li data-type="method" id="RPCWallet-startMining-nav"><a href="module-RPCWallet.html#~startMining">startMining</a></li><li data-type="method" id="RPCWallet-stopMining-nav"><a href="module-RPCWallet.html#~stopMining">stopMining</a></li><li data-type="method" id="RPCWallet-stopWallet-nav"><a href="module-RPCWallet.html#~stopWallet">stopWallet</a></li><li data-type="method" id="RPCWallet-store-nav"><a href="module-RPCWallet.html#~store">store</a></li><li data-type="method" id="RPCWallet-submitMultisig-nav"><a href="module-RPCWallet.html#~submitMultisig">submitMultisig</a></li><li data-type="method" id="RPCWallet-submitTransfer-nav"><a href="module-RPCWallet.html#~submitTransfer">submitTransfer</a></li><li data-type="method" id="RPCWallet-sweepAll-nav"><a href="module-RPCWallet.html#~sweepAll">sweepAll</a></li><li data-type="method" id="RPCWallet-sweepDust-nav"><a href="module-RPCWallet.html#~sweepDust">sweepDust</a></li><li data-type="method" id="RPCWallet-sweepSingle-nav"><a href="module-RPCWallet.html#~sweepSingle">sweepSingle</a></li><li data-type="method" id="RPCWallet-tagAccounts-nav"><a href="module-RPCWallet.html#~tagAccounts">tagAccounts</a></li><li data-type="method" id="RPCWallet-transfer-nav"><a href="module-RPCWallet.html#~transfer">transfer</a></li><li data-type="method" id="RPCWallet-transferSplit-nav"><a href="module-RPCWallet.html#~transferSplit">transferSplit</a></li><li data-type="method" id="RPCWallet-untagAccounts-nav"><a href="module-RPCWallet.html#~untagAccounts">untagAccounts</a></li><li data-type="method" id="RPCWallet-validateAddress-nav"><a href="module-RPCWallet.html#~validateAddress">validateAddress</a></li><li data-type="method" id="RPCWallet-verify-nav"><a href="module-RPCWallet.html#~verify">verify</a></li></ul></li></ul>
-        </div>
-    </div>
-  </nav>
-
-  <div id="main">
-    
+    <h1 class="page-title">Home</h1>
 
     
-      
 
 
 
     
 
-      
+
+    <h3>scala-rpc-js 0.2.1</h3>
 
 
-  <section class="readme">
-    <article>
-      <h1>Scala RPC Daemon and RPC Wallet Javascript Library</h1>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><h1>Scala RPC Daemon and RPC Wallet Javascript Library</h1>
 <p><a href="https://nodei.co/npm/scala-rpc-js/"><img src="https://nodei.co/npm/scala-rpc-js.png" alt="NPM"></a></p>
 <p>Javascript library to interact with RPC Daemon and RPC Wallet.<br>
 All requests are queued. Most functions are async.</p>
@@ -180,39 +102,27 @@ walletClient.sslRejectUnauthorized(false)
 </code></pre>
 <h2>Get unit tests list</h2>
 <pre class="prettyprint source"><code>npm test
-</code></pre>
-    </article>
-  </section>
-
-
-    
+</code></pre></article>
+    </section>
 
 
 
-  <br class="clear">
 
-  <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
-  </footer>
 
-    
 
-  <script src="scripts/linenumber.js"></script>
-  <script src="scripts/pagelocation.js"></script>
-  <script src="scripts/scrollbar.js"></script>
-  <script src="scripts/collapsible.js"></script>
-  <script src="scripts/jquery.selectric.min.js"></script>
-  <script src="scripts/clipboard.min.js"></script>
+</div>
 
-  <script>hljs.initHighlightingOnLoad();</script>
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-RPCDaemon.html">RPCDaemon</a></li><li><a href="module-RPCWallet.html">RPCWallet</a></li></ul>
+</nav>
 
-  
-  <script>
-      $(function () {
-          $('#menu-container').scrollbar();
+<br class="clear">
 
-          
-      });
-    </script>
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Jan 18 2025 16:02:25 GMT+0400 (Gulf Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
 </body>
 </html>
